@@ -1,0 +1,2597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+
+    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    
+    <!-- 头部导航栏 -->
+    <header class="top-nav">
+        <div class="container content">
+            <!-- 左边连接 -->
+            <div class="nav-link">
+                <a class="selectA" href="html/index.html">起点中文网</a>
+                <a href="">起点女生网</a>
+                <em>|</em>
+                <a href="">创世中文网</a>
+                <em>|</em>
+                <a href="">云起书院</a>
+                <em>|</em>
+                <a href="">繁体版</a>
+            </div>
+            <!-- 登录|注册 -->
+            <div class="login-box">
+                <a id="login" href="javascript:;">登录</a>
+                <em>|</em>
+                <a id="register" href="html/register.html" target="_blank">注册</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 登录界面 -->
+    <div id="login_wrap" class="modal-login">
+        <div class="login-wrap">
+            <span id="close_login" class="close-login-wrap">×</span>
+            <ul class="login-tag">
+                <li class="act">账号登录</li>
+                <li>QQ登录</li>
+                <li>微信登录</li>
+            </ul>
+            <div class="login-switch-wrap">
+                <!-- 账号登录 -->
+                <div id="zh_login" class="zh-login-wrap">
+                    <dl>
+                        <dd>
+                            <span class="login-icon iconfont icon-renwu"></span>
+                            <input type="text" placeholder="手机/邮箱/用户名">
+                        </dd>
+                        <dd>
+                            <span class="login-icon  iconfont icon-lock"></span>
+                            <input type="text" placeholder="密码">
+                        </dd>
+                    </dl>
+                    <div class="auto-login-box">
+                        <input type="checkbox">
+                        <em>自动登录</em>
+                        <a href="">忘记密码</a>
+                    </div>
+                    <div class="login-btn">
+                        <button>登 录</button>
+                    </div>
+                    <div class="register-box">
+                        <a href="">手机验证码登录</a>
+                        <em>|</em>
+                        <a href="">免费注册</a>
+                    </div>
+                    <!-- 通用格式 -->
+                    <p class="login-common">登录即代表同意<a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a></p>
+                    <div class="order-way">
+                        <a href=""><span class="iconfont icon-zhifubaozhifu"></span></a>
+                        <a href=""><span class="iconfont icon-xinlangweibo"></span></a>
+                        <a href=""><span class="iconfont icon-BaiDu"></span></a>
+                    </div>
+                </div>
+                <!-- QQ登录 -->
+                <div id="qq_login" class="qq-login-wrap">
+                    <img src="img/qq-logo.png" alt="">
+                    <p class="qq-login-tip">您将跳转至指定页面进行登陆操作</p>
+                    <div class="login-btn">
+                        <button>前去登录 QQ</button>
+                    </div>
+                    <!-- 通用格式 -->
+                    <p class="login-common">登录即代表同意<a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a></p>
+                </div>
+                <!-- 微信登陆 -->
+                <div id="wx_login" class="wx-login-wrap">
+                    <div class="QR-code">
+                        <span>这是二维码</span>
+                    </div>
+                    <p class="wx-login-tip">使用微信扫一扫登录</p>
+                    <p class="wx-login-tip">"起点中文网"</p>
+                    <!-- 通用格式 -->
+                    <p class="login-common">登录即代表同意<a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- logo和搜索栏 -->
+    <div class="logo-wrap">
+        <div class="container">
+            <!-- logo -->
+            <h1 class="logo"><a href="html/index.html"><img src="img/logo.png" alt=""></a></h1>
+            <!-- 搜索栏 -->
+            <p class="search-wrap">
+                <input type="text" placeholder="这个海贼背靠正义">
+                <a href="html/searchPage.html">
+                    <span>
+                        <!-- <span class="search-icon"><img src="img/sousuo.png" alt=""></span> -->
+                        <span class="search-icon ">
+                            <span class="iconfont icon-sousuo"></span>
+                        </span>
+                    </span>
+                </a>
+            </p>
+            <!-- 我的书架 -->
+            <div class="book-shelf">
+                <a href="">
+                    <span>
+                        <span class="iconfont icon-tushu"></span>
+                    </span>
+                    <p>我的书架</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="main-nav-wrap">
+        <div class="container main-nav">
+            <ul>
+                <li><span>作品分类</span></li>
+                <li><a href="html/all.html">全部作品</a></li>
+                <li><a href="">排行</a></li>
+                <li><a href="">完本</a></li>
+                <li><a href="">免费</a></li>
+                <li><a href="">作家专区</a></li>
+                <li><a href="">搜索</a></li>
+                <li><a href="">女生网</a></li>
+                <li><a href=""><span class="iconfont icon-shouji"></span> 客户端</a></li>
+                <li><a href=""><span class="iconfont icon-shubiao"></span> 页游</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-wrap">
+        <section class="container">
+            <!-- 顶部焦点图 -->
+            <div class="index-focus-wrap">
+                <!-- 顶部左边分类 -->
+                <div class="classify-list">
+                    <ul>
+                        <li class="even">
+                            <a href="">
+                                <span class="iconfont icon-bagua"></span>
+                                <span><i>玄幻</i><b>721722</b></span>
+                            </a>
+                        </li>
+                        <li class="even">
+                            <a href="">
+                                <span class="iconfont icon-bagua"></span>
+                                <span><i>奇幻</i><b>159241</b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="iconfont icon-bagua"></span>
+                                <span><i>武侠</i><b>45378</b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="iconfont icon-bagua"></span>
+                                <span><i>仙侠</i><b>236460</b></span>
+                            </a>
+                        </li>
+                        <li class="even">
+                            <a href="">
+                                <span class="iconfont icon-junshi"></span>
+                                <span><i>都市</i><b>374244</b></span>
+                            </a>
+                        </li>
+                        <li class="even">
+                            <a href="">
+                                <span class="iconfont icon-junshi"></span>
+                                <span><i>现实</i><b>43492</b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="iconfont icon-junshi"></span>
+                                <span><i>军事</i><b>20623</b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="iconfont icon-junshi"></span>
+                                <span><i>历史</i><b>77225</b></span>
+                            </a>
+                        </li>
+                        <li class="even">
+                            <a href="">
+                                <span class="iconfont icon-feidie"></span>
+                                <span><i>游戏</i><b>108311</b></span>
+                            </a>
+                        </li>
+                        <li class="even">
+                            <a href="">
+                                <span class="iconfont icon-feidie"></span>
+                                <span><i>体育</i><b>9109</b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="iconfont icon-feidie"></span>
+                                <span><i>科幻</i><b>157333</b></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="iconfont icon-maomi"></span>
+                                <span><i>诸天无限</i><b>52280</b></span>
+                            </a>
+                        </li>
+                        <li class="even">
+                            <a href="">
+                                <span class="iconfont icon-maomi"></span>
+                                <span><i>悬疑</i><b>66996</b></span>
+                            </a>
+                        </li>
+                        <li class="even">
+                            <a href="">
+                                <span class="iconfont icon-maomi"></span>
+                                <span><i>轻小说</i><b>113490</b></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 顶部中间焦点图 -->
+                <div class="focus-box">
+                    <div class="focus-slider">
+                        <ul id="index_top_focus">
+                            <li><a href="html/xiangxi.html"><img src="img/index_img/focus3.jpg" alt=""></a></li>
+                            <li><a href=""><img src="img/index_img/focus2.jpg" alt=""></a></li>
+                            <li><a href=""><img src="img/index_img/focus1.jpg" alt=""></a></li>
+                            <li><a href=""><img src="img/index_img/focus4.jpg" alt=""></a></li>
+                            <li><a href=""><img src="img/index_img/focus5.jpg" alt=""></a></li>
+                            <li><a href=""><img src="img/index_img/focus3.jpg" alt=""></a></li>
+                        </ul>
+                        <ol>
+                            <li class="act"><a href="html/xiangxi.html">夜的命名术</a></li>
+                            <li><a href="">大秦：始皇嫡子</a></li>
+                            <li><a href="">卡牌指南</a></li>
+                            <li><a href="">全球轮回：我的身</a></li>
+                            <li><a href=""><span class="iconfont icon-youxishoubing"></span>三国群英传</a></li>
+                        </ol>
+                        <a href=""><i><em></em><em></em><em></em></i></a>
+                    </div>
+                    <div class="focus-img">
+                        <span><a href=""><img src="img/index_img/adver01.png" alt=""></a></span>
+                        <span><a href=""><img src="img/index_img/adver02.png" alt=""></a></span>
+                        <span><a href=""><img src="img/index_img/adver03.png" alt=""></a></span>
+                    </div>
+                </div>
+                <!-- 顶部右侧新闻 -->
+                <div class="notice-wrap">
+                    <div class="index-notice">
+                        <h3><a href="">优秀网络文学作品展示</a></h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>「资讯」</span>
+                                    寂寞剑客新书发布 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>「资讯」</span>
+                                    远瞳新书：深海余烬 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>「公告」</span>
+                                    网络文学行业文明公约 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>「公告」</span>
+                                    相思洗红豆新作发布 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="notice-adver" href="">
+                                    <span><i>广告</i></span>
+                                    开局统帅N选一 
+                                </a>
+                            </li>
+                            <li>
+                                <a class="notice-adver" href="">
+                                    <span><i>广告</i></span>
+                                    带你称霸万国战场 
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="attention">
+                            <img src="img/index_img/laba.png" alt="">
+                            <span><p id="attention_text">帅气靓仔支持 养崽玩家在线基建 100W点</p></span>
+                        </div>
+                    </div>
+                    <img src="img/index_img/adver04.png" alt="">
+                </div>
+            </div>
+            <!-- 首页第二个板块 -->
+            <div class="index-two-wrap">
+                <!-- 本周强推 -->
+                <div class="recommend-list">
+                    <h3 class="wrap-title">本周强推</h3>
+                    <ul>
+                        <li>
+                            <span><a href=""><em>「</em>仙侠<em>」</em></a></span>
+                            <p><a href="">光阴之外</a></p>
+                            <i><a href="">耳根</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>都市<em>」</em></a></span>
+                            <p><a href="">凶狠系男神</a></p>
+                            <i><a href="">我女儿太可</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>科幻<em>」</em></a></span>
+                            <p><a href="">非人类玩家</a></p>
+                            <i><a href="">非人流</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>科幻<em>」</em></a></span>
+                            <p><a href="">我以神明为食</a></p>
+                            <i><a href="">相思洗红豆</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>诸天无限<em>」</em></a></span>
+                            <p><a href="">从长津湖开始</a></p>
+                            <i><a href="">袁行侠</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>历史<em>」</em></a></span>
+                            <p><a href="">我的姐夫是太子</a></p>
+                            <i><a href="">上山打老虎</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>都市<em>」</em></a></span>
+                            <p><a href="">离婚后成了神豪</a></p>
+                            <i><a href="">我骑小踏板</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>轻小说<em>」</em></a></span>
+                            <p><a href="">我真不是除念师</a></p>
+                            <i><a href="">紫蓝色的猪</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>轻小说<em>」</em></a></span>
+                            <p><a href="">我和女友穿越了</a></p>
+                            <i><a href="">七月酒仙</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>诸天无限<em>」</em></a></span>
+                            <p><a href="">四合院之闫家老大</a></p>
+                            <i><a href="">星际旅客</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>都市<em>」</em></a></span>
+                            <p><a href="">从柯南开始重新做人</a></p>
+                            <i><a href="">李四羊</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>仙侠<em>」</em></a></span>
+                            <p><a href="">完蛋！我成替身了！</a></p>
+                            <i><a href="">六月观主</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>仙侠<em>」</em></a></span>
+                            <p><a href="">红云：立大乘佛教成圣</a></p>
+                            <i><a href="">锦鲤糖醋</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>轻小说<em>」</em></a></span>
+                            <p><a href="">只想摸摸的我能有什么坏心思</a></p>
+                            <i><a href="">摸摸贝</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>玄幻<em>」</em></a></span>
+                            <p><a href="">一人一剑，我镇守孤城七十年</a></p>
+                            <i><a href="">白眉小熊猫</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>游戏<em>」</em></a></span>
+                            <p><a href="">CSGO：这个狙击手有亿点强！</a></p>
+                            <i><a href="">小诗喵</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>都市<em>」</em></a></span>
+                            <p><a href="">冒牌女友是大明星</a></p>
+                            <i><a href="">未曾欢</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>页游<em>」</em></a></span>
+                            <p><a href="">超能巅峰之战</a></p>
+                            <i><a href="">广告</a></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 编辑推荐 -->
+                <div class="editor-rec-wrap">
+                    <h3 class="wrap-title">编辑推荐</h3>
+                    <div class="editor-rec-focus">
+                        <!-- 焦点图 -->
+                        <div class="editor-rec-img-focus">
+                            <div class="rec-focus-list">
+                                <ul id="rec_focus">
+                                    <li>
+                                        <a href=""><img src="img/index_img/edit-rec1.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/index_img/edit-rec2.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/index_img/edit-rec3.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/index_img/edit-rec4.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/index_img/edit-rec5.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/index_img/edit-rec6.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/index_img/edit-rec7.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/index_img/edit-rec1.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ol>
+                                <li class="act"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ol>
+                            <span id="rec_focus_left" class="rec_focus_left iconfont icon-xiangzuojiantou"></span>
+                            <span id="rec_focus_right" class="rec_focus_right iconfont icon-xiangyoujiantou"></span>
+                        </div>
+                        <div class="editor-rec-text act">
+                            <a class="rec-text-title" href=""><h3>大国军舰</h3></a>
+                            <p>科技强国，一步步铸就大国军舰！</p>
+                            <a class="red-radius-btn" href="">书籍详细</a>
+                        </div>
+                        <div class="editor-rec-text">
+                            <a class="rec-text-title" href=""><h3>诡系世界的亵渎巫师</h3></a>
+                            <p>凭借命运重启的能力，走上了成为‘亵渎之主’的道路。</p>
+                            <a class="red-radius-btn" href="">书籍详细</a>
+                        </div>
+                        <div class="editor-rec-text">
+                            <a class="rec-text-title" href=""><h3>重生你是我老婆，看你洗头怎么了</h3></a>
+                            <p>何洪昌逆流重生回来，开局就是强行洞房，转身立马就离婚，出去接着浪！</p>
+                            <a class="red-radius-btn" href="">书籍详细</a>
+                        </div>
+                        <div class="editor-rec-text">
+                            <a class="rec-text-title" href=""><h3>我带全村脱贫致富</h3></a>
+                            <p>三十年扶贫攻坚，改编自真实案例。</p>
+                            <a class="red-radius-btn" href="">书籍详细</a>
+                        </div>
+                        <div class="editor-rec-text">
+                            <a class="rec-text-title" href=""><h3>我的游戏角色是现实救世主</h3></a>
+                            <p>这款游戏未免也太轻松了吧？</p>
+                            <a class="red-radius-btn" href="">书籍详细</a>
+                        </div>
+                        <div class="editor-rec-text">
+                            <a class="rec-text-title" href=""><h3>朕的妃子都是人才</h3></a>
+                            <p>朕的妃子，个个是人才！</p>
+                            <a class="red-radius-btn" href="">书籍详细</a>
+                        </div>
+                        <div class="editor-rec-text">
+                            <a class="rec-text-title" href=""><h3>黑雾之王</h3></a>
+                            <p>鹰击长空，鱼翔浅底，万类霜天竞自由，到中流击水，浪遏飞舟。</p>
+                            <a class="red-radius-btn" href="">书籍详细</a>
+                        </div>
+                    </div>
+                    <div class="editor-rec">
+                        <ul>
+                            <li>
+                                <h3><a href="">我的星河科技</a></h3>
+                                <span><cite>16,795</cite><i>人在追</i></span>
+                                <p>五千年，终于轮到我上场了！</p>
+                            </li>
+                            <li>
+                                <h3><a href="">星界使徒</a></h3>
+                                <span><cite>717,729</cite><i>人在追</i></span>
+                                <p>五千年，终于轮到我上场了！</p>
+                            </li>
+                            <li>
+                                <h3><a href="">废柴NPC要接管世界</a></h3>
+                                <span><cite>1054</cite><i>人在追</i></span>
+                                <p>李五是元宇宙游戏“一梦千年”里的一个NPC。</p>
+                            </li>
+                            <li>
+                                <h3><a href="">从我开始杀出武道长城</a></h3>
+                                <span><cite>16,267</cite><i>人在追</i></span>
+                                <p>古老神话复苏，以我之躯，打造守护人族长城！</p>
+                            </li>
+                            <li>
+                                <h3><a href="">我在地球当影帝</a></h3>
+                                <span><cite>24,259</cite><i>人在追</i></span>
+                                <p>这是一个蓝星政客在地球当演员，并且成为传奇的故事……</p>
+                            </li>
+                            <li>
+                                <h3><a href="">我的模拟长生路</a></h3>
+                                <span><cite>63,489</cite><i>人在追</i></span>
+                                <p>幸得异宝，可回档重来，百世不悔，但求长生！</p>
+                            </li>
+                        </ul>
+                        <div class="editor-rec-img">
+                            <ul>
+                                <li>
+                                    <div class="rec-book-info">
+                                        <a href=""><h3>影帝：我在片场捡属性</h3></a>
+                                        <p>能在片场捡别人掉落的演技！</p>
+                                    </div>
+                                    <a href=""><img src="img/index_img/rec_book1.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <div class="rec-book-info">
+                                        <a href=""><h3>国师大人一动不动</h3></a>
+                                        <p>能坐着就不站着，能御剑就不动腿，能一剑杀之，就绝不出第二剑。</p>
+                                    </div>
+                                    <a href=""><img src="img/index_img/rec_book2.jpg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 三江·网文新风 -->
+                <div class="recommend-list">
+                    <h3 class="wrap-title">三江·网文新风</h3>
+                    <ul>
+                        <li>
+                            <span><a href=""><em>「</em>都市<em>」</em></a></span>
+                            <p><a href="">牧场闲情</a></p>
+                            <i><a href="">牧场</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>历史<em>」</em></a></span>
+                            <p><a href="">北朝帝业</a></p>
+                            <i><a href="">北朝</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>仙侠<em>」</em></a></span>
+                            <p><a href="">道士夜仗剑</a></p>
+                            <i><a href="">道士</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>都市<em>」</em></a></span>
+                            <p><a href="">我就是富二代</a></p>
+                            <i><a href="">重生</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>轻小说<em>」</em></a></span>
+                            <p><a href="">开局操作蝙蝠侠</a></p>
+                            <i><a href="">蝙蝠侠</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>仙侠<em>」</em></a></span>
+                            <p><a href="">我开创了无数幻境</a></p>
+                            <i><a href="">灵气</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>仙侠<em>」</em></a></span>
+                            <p><a href="">国师大人一动不动</a></p>
+                            <i><a href="">预知</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>轻小说<em>」</em></a></span>
+                            <p><a href="">大蛇丸的阿拉神灯</a></p>
+                            <i><a href="">火影</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>轻小说<em>」</em></a></span>
+                            <p><a href="">宗主大人想让我表白</a></p>
+                            <i><a href="">恋爱</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>玄幻<em>」</em></a></span>
+                            <p><a href="">修炼从简化功法开始</a></p>
+                            <i><a href="">修炼</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>玄幻<em>」</em></a></span>
+                            <p><a href="">吞噬星空从战刀开始</a></p>
+                            <i><a href="">吞噬星空</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>都市<em>」</em></a></span>
+                            <p><a href="">影帝：我在片场捡属性</a></p>
+                            <i><a href="">影帝</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>都市<em>」</em></a></span>
+                            <p><a href="">文娱，我只喜欢拍电影</a></p>
+                            <i><a href="">文娱</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>游戏<em>」</em></a></span>
+                            <p><a href="">联盟：我真不是绝活哥</a></p>
+                            <i><a href="">狗头精神</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>玄幻<em>」</em></a></span>
+                            <p><a href="">神诡世界，我有特殊悟性</a></p>
+                            <i><a href="">骚操作</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>轻小说<em>」</em></a></span>
+                            <p><a href="">海贼：名师凯多，在线教学</a></p>
+                            <i><a href="">海贼</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>仙侠<em>」</em></a></span>
+                            <p><a href="">我有熟练度外挂</a></p>
+                            <i><a href="">乱世</a></i>
+                        </li>
+                        <li>
+                            <span><a href=""><em>「</em>页游<em>」</em></a></span>
+                            <p><a href="">道士带N狗</a></p>
+                            <i><a href="">广告</a></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 广告 -->
+            <div class="banner-wrap">
+                <a href=""><img src="https://img1.qidian.com/upload/gamesy/2021/11/09/20211109174835pam0uqpmbf.jpg" alt=""></a>
+            </div>
+
+            <!-- 排行榜 -->
+            <div class="rank-wrap">
+                <div id="rank_list_wrap" class="rank-list-wrap">
+                    <!-- 月票榜·VIP新作 -->
+                    <ul class="rank-list">
+                        <h3 class="wrap-title"><a href="">月票榜·VIP新作</a></h3>
+                        <li>
+                            <div class="rank-book-info">
+                                <span class="rank-one">NO.1</span>
+                                <h3><a href="">光阴之外</a></h3>
+                                <p><cite>3319</cite>月票</p>
+                                <p><a href="">仙侠</a><i>·</i><a href="">耳根</a></p>
+                            </div>
+                            <div class="rank-book-img">
+                                <a href="">
+                                    <img src="img/index_img/rank_book1.jpg" alt="">
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-two">2</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-three">3</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>11</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>12</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>13</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>14</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>15</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 畅销榜  -->
+                    <ul class="rank-list">
+                        <h3 class="wrap-title"><a href="">畅销榜</a></h3>
+                        <li>
+                            <div class="rank-book-info">
+                                <span class="rank-one">NO.1</span>
+                                <h3><a href="">夜的命名术</a></h3>
+                                <p><span>销量冠军</span></p>
+                                <p><a href="">都市</a><i>·</i><a href="">会说话的肘子</a></p>
+                            </div>
+                            <div class="rank-book-img">
+                                <a href="">
+                                    <img src="img/index_img/rank_book2.jpg" alt="">
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-two">2</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-three">3</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>11</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>12</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>13</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>14</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>15</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 书友榜  -->
+                    <ul class="rank-list">
+                        <h3 class="wrap-title"><a href="">书友榜</a></h3>
+                        <li>
+                            <div class="rank-book-info">
+                                <span class="rank-one">NO.1</span>
+                                <h3><a href="">我的姐夫是太子</a></h3>
+                                <p><span>增长最快</span></p>
+                                <p><a href="">历史</a><i>·</i><a href="">上山打老虎额</a></p>
+                            </div>
+                            <div class="rank-book-img">
+                                <a href="">
+                                    <img src="img/index_img/rank_book3.jpg" alt="">
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-two">2</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-three">3</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>11</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>12</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>13</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>14</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>15</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 阅读指数榜  -->
+                    <ul class="rank-list">
+                        <h3 class="wrap-title"><a href="">阅读指数榜</a></h3>
+                        <li>
+                            <div class="rank-book-info">
+                                <span class="rank-one">NO.1</span>
+                                <h3><a href="">灵魂行者</a></h3>
+                                <p><span>本周最强</span></p>
+                                <p><a href="">科幻</a><i>·</i><a href="">买报小郎君</a></p>
+                            </div>
+                            <div class="rank-book-img">
+                                <a href="">
+                                    <img src="img/index_img/rank_book4.jpg" alt="">
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-two">2</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-three">3</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>11</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>12</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>13</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>14</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>15</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- 签约作者新书榜  -->
+                    <ul class="rank-list">
+                        <h3 class="wrap-title"><a href="">签约作者新书榜</a></h3>
+                        <li>
+                            <div class="rank-book-info">
+                                <span class="rank-one">NO.1</span>
+                                <h3><a href="">深海余烬</a></h3>
+                                <p><span>本周最强</span></p>
+                                <p><a href="">科幻</a><i>·</i><a href="">远瞳</a></p>
+                            </div>
+                            <div class="rank-book-img">
+                                <a href="">
+                                    <img src="img/index_img/rank_book5.jpg" alt="">
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-two">2</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-three">3</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>11</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>12</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>13</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>14</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>15</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>788</i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rank-more-wrap">
+                    <em id="rank_more">展开更多<span></span></em> 
+                </div>
+            </div>
+
+            <!-- 广告 -->
+            <div class="banner-wrap">
+                <a href=""><img src="https://bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/141841ca350aef7afc245e3439abeeca.jpg" alt=""></a>
+            </div>
+
+            <!-- 热门作品 -->
+            <div class="hot-book-wrap">
+                <div class="hot-book-focus-wrap">
+                    <h3 class="wrap-title">热门作品</h3>
+                    <div class="hot-book-focus">
+                        <ul>
+                            <li class="act">
+                                <div class="hot-focus">
+                                    <a href=""><img src="img/index_img/hot_img1.jpg" alt=""></a>
+                                </div>
+                                <h3><a href="">我的公公叫康熙</a></h3>
+                                <p class="author"><a href="">雁九</a></p>
+                                <p class="total"><b>1,432,806</b>人气</p>
+                                <p class="intro">九龙夺嫡，成为康熙儿媳!</p>
+                                <a class="red-radius-btn" href="">书籍详细</a>
+                            </li>
+                            <li >
+                                <div class="hot-focus">
+                                    <a href=""><img src="img/index_img/hot_img2.jpg" alt=""></a>
+                                </div>
+                                <h3><a href="">恶灵骑士的诸天裁决</a></h3>
+                                <p class="author"><a href="">疯狂的沉寂</a></p>
+                                <p class="total"><b>136,149</b>人气</p>
+                                <p class="intro"> 穿越到漫威宇宙，成为了第四代恶灵骑士 !</p>
+                                <a class="red-radius-btn" href="">书籍详细</a>
+                            </li> 
+                            <li>
+                                <div class="hot-focus">
+                                    <a href=""><img src="img/index_img/hot_img3.jpg" alt=""></a>
+                                </div>
+                                <h3><a href="">修仙从成为转生者开始</a></h3>
+                                <p class="author"><a href="">森萝万象</a></p>
+                                <p class="total"><b>318,732</b>人气</p>
+                                <p class="intro"> 从无数次转生中寻求长生不老！ !</p>
+                                <a class="red-radius-btn" href="">书籍详细</a>
+                            </li> 
+                        </ul>        
+                    </div>
+                </div>
+                <div class="hot-classify-wrap">
+                    <ul>
+                        <!-- 玄幻奇幻 -->
+                        <li>
+                            <h3 class="wrap-title">玄幻<i>·</i>奇幻</h3>
+                            <b class="hot-icon-tag xhqh"></b>
+                            <dl>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">我，敕封万物</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">洪荒：我人族圣师，开局创建武道</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <!-- 武侠仙侠 -->
+                        <li>
+                            <h3 class="wrap-title">武侠<i>·</i>仙侠</h3>
+                            <b class="hot-icon-tag wxxx"></b>
+                            <dl>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">我，敕封万物</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">洪荒：我人族圣师，开局创建武道</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <!-- 都市现实 -->
+                        <li>
+                            <h3 class="wrap-title">都市<i>·</i>现实</h3>
+                            <b class="hot-icon-tag dsxs"></b>
+                            <dl>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">我，敕封万物</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">洪荒：我人族圣师，开局创建武道</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <!-- 历史军事 -->
+                        <li>
+                            <h3 class="wrap-title">历史<i>·</i>军事</h3>
+                            <b class="hot-icon-tag lsjs"></b>
+                            <dl>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">我，敕封万物</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">洪荒：我人族圣师，开局创建武道</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <!-- 游戏体育 -->
+                        <li>
+                            <h3 class="wrap-title">游戏<i>·</i>体育</h3>
+                            <b class="hot-icon-tag yxty"></b>
+                            <dl>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">我，敕封万物</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">洪荒：我人族圣师，开局创建武道</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <!-- 科幻悬疑 -->
+                        <li>
+                            <h3 class="wrap-title">科幻<i>·</i>悬疑</h3>
+                            <b class="hot-icon-tag khxy"></b>
+                            <dl>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">我，敕封万物</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">洪荒：我人族圣师，开局创建武道</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <!-- 轻小说 -->
+                        <li>
+                            <h3 class="wrap-title">轻小说</h3>
+                            <b class="hot-icon-tag qxs"></b>
+                            <dl>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">我，敕封万物</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">洪荒：我人族圣师，开局创建武道</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <!-- 诸天无限 -->
+                        <li>
+                            <h3 class="wrap-title">诸天无限</h3>
+                            <b class="hot-icon-tag wxxx"></b>
+                            <dl>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">我，敕封万物</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">洪荒：我人族圣师，开局创建武道</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                                <dd>
+                                    <a class="hot-classify-tag" href=""><em>「</em>玄幻<em>」</em></a>
+                                    <a class="hot-name-box" href="">苟在仙诡世界</a>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 新书推荐 -->
+            <div class="new-book-wrap">
+                <div class="new-book-focus-wrap">
+                    <h3 class="wrap-title">新书推荐<i>上周入库4809本</i></h3>
+                    <div class="new-book-content">
+                        <div class="book-focus-wrap">
+                            <div class="new-book-focus">
+                                <ul>
+                                    <li class="act">
+                                        <div class="new-focus">
+                                            <a href=""><img src="img/index_img/new_img1.jpg" alt=""></a>
+                                        </div>
+                                        <h3><a href="">京都羽翼的荣光</a></h3>
+                                        <p class="author"><a href="">月华礼吻<em>·</em>日更千字</a></p>
+                                        <p class="total"><b>24,275</b>人在追</p>
+                                        <p class="intro">京都羽翼的荣光</p>
+                                        <a class="red-radius-btn" href="">书籍详细</a>
+                                    </li>
+                                    <li >
+                                        <div class="new-focus">
+                                            <a href=""><img src="img/index_img/new_img2.jpg" alt=""></a>
+                                        </div>
+                                        <h3><a href="">天道今天不上班</a></h3>
+                                        <p class="author"><a href="">魔性沧月<em>·</em>日更千字</a></p>
+                                        <p class="total"><b>54,347</b>人在追</p>
+                                        <p class="intro"> 天道今天不上班 !</p>
+                                        <a class="red-radius-btn" href="">书籍详细</a>
+                                    </li> 
+                                    <li>
+                                        <div class="new-focus">
+                                            <a href=""><img src="img/index_img/new_img3.jpg" alt=""></a>
+                                        </div>
+                                        <h3><a href="">国王</a></h3>
+                                        <p class="author"><a href="">新海月1<em>·</em>日更千字</a></p>
+                                        <p class="total"><b>24,275</b>人在追</p>
+                                        <p class="intro"> 万族共存，剑与魔法交相辉映</p>
+                                        <a class="red-radius-btn" href="">书籍详细</a>
+                                    </li> 
+                                </ul>        
+                            </div>
+                        </div>
+                        <div class="new-book-list-wrap">
+                            <ul>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">画诡</a></h3>
+                                        <p>地狱不空，我不成佛。
+                                            面对地狱越来越多的恶诡，地藏王想了一个快速成佛的办法，干碎地狱……
+                                            恶诡乱人间，活人进地狱。
+                                            画诡传人李玄，靠一支画诡卷轴穿梭于阴世和阳世之间，一边送恶诡回地狱，一边把地狱里的活人捞出来。
+                                            额，收费的……
+                                            阳间收RMB，阴间收纸钱、收古董、收法宝、收女鬼……
+                                            这阴间的钱，比阳间的好赚啊。</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>玉叶留青</i>
+                                            </a>
+                                            <span>诡异悬疑</span>
+                                            <span>日更3千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">我被盗墓贼盯上了</a></h3>
+                                        <p>本书又名，《谢邀，我不是盗墓贼》《人在盗墓，我不是盗墓世家。》
+                                            一觉醒来，李枫发现自己来到盗墓世界，一心一意的做起文抄公，可是伴随着一座座古墓的出土，小说都成了现实。
+                                            尸蹩、僵尸、九头蛇柏都出现了，以至于，被请过去交代一下事实。
+                                            王凯旋：“老胡，你也看小说了？”
+                                            吴邪：“小哥，这是不是你的自传？”
+                                            潘子：“三爷，我最近都在看这本书。”
+                                            ……
+                                            天啊，自己竟然被盗墓贼盯上了，怎么办！</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>肉林酒池</i>
+                                            </a>
+                                            <span>诡异悬疑</span>
+                                            <span>日更3千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">双面利刃</a></h3>
+                                        <p>什么事情可以让人孤掷一注，连死都不怕？
+                                            任何事情都有两面性，即使是亲眼见到的，那也不一定是真相，那些看似不合逻辑的背后又隐藏着哪些不为人知的故事？
+                                            探案倒计时10、9、8......</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>徐婠</i>
+                                            </a>
+                                            <span>现实百态</span>
+                                            <span>日更1千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">画诡</a></h3>
+                                        <p>地狱不空，我不成佛。
+                                            面对地狱越来越多的恶诡，地藏王想了一个快速成佛的办法，干碎地狱……
+                                            恶诡乱人间，活人进地狱。
+                                            画诡传人李玄，靠一支画诡卷轴穿梭于阴世和阳世之间，一边送恶诡回地狱，一边把地狱里的活人捞出来。
+                                            额，收费的……
+                                            阳间收RMB，阴间收纸钱、收古董、收法宝、收女鬼……
+                                            这阴间的钱，比阳间的好赚啊。</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>玉叶留青</i>
+                                            </a>
+                                            <span>诡异悬疑</span>
+                                            <span>日更3千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">我被盗墓贼盯上了</a></h3>
+                                        <p>本书又名，《谢邀，我不是盗墓贼》《人在盗墓，我不是盗墓世家。》
+                                            一觉醒来，李枫发现自己来到盗墓世界，一心一意的做起文抄公，可是伴随着一座座古墓的出土，小说都成了现实。
+                                            尸蹩、僵尸、九头蛇柏都出现了，以至于，被请过去交代一下事实。
+                                            王凯旋：“老胡，你也看小说了？”
+                                            吴邪：“小哥，这是不是你的自传？”
+                                            潘子：“三爷，我最近都在看这本书。”
+                                            ……
+                                            天啊，自己竟然被盗墓贼盯上了，怎么办！</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>肉林酒池</i>
+                                            </a>
+                                            <span>诡异悬疑</span>
+                                            <span>日更3千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">双面利刃</a></h3>
+                                        <p>什么事情可以让人孤掷一注，连死都不怕？
+                                            任何事情都有两面性，即使是亲眼见到的，那也不一定是真相，那些看似不合逻辑的背后又隐藏着哪些不为人知的故事？
+                                            探案倒计时10、9、8......</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>徐婠</i>
+                                            </a>
+                                            <span>现实百态</span>
+                                            <span>日更1千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="new-book-rank-wrap">
+                    <ul class="rank-list">
+                        <h3 class="wrap-title"><a href="">新人·签约新书榜</a></h3>
+                        <li>
+                            <div class="rank-book-info">
+                                <span class="rank-one">NO.1</span>
+                                <h3><a href="">我，魔女之王</a></h3>
+                                <p style="font-size: 16px;">本周最强</p>
+                                <p><a href="">轻小说</a><i>·</i><a href="">星之塔比</a></p>
+                            </div>
+                            <div class="rank-book-img">
+                                <a href="">
+                                    <img src="img/index_img/mnzw.jpg" alt="">
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-two">2</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>—</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="rank-three">3</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>—</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>4</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>—</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>5</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>—</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>6</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>—</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>7</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>—</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>8</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>—</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>9</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>—</i>
+                            </div>
+                        </li>
+                        <li>
+                            <span>10</span>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>—</i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 广告x3 -->
+            <div class="three-banner">
+                <div class="banner-item">
+                    <a href=""><img src="img/index_img/adver05.png" alt=""></a>
+                </div>
+                <div class="banner-item">
+                    <a href=""><img src="img/index_img/adver06.png" alt=""></a>
+                </div>
+                <div class="banner-item">
+                    <a href=""><img src="img/index_img/adver07.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- 完本推荐 -->
+            <div class="new-book-wrap">
+                <div class="new-book-focus-wrap">
+                    <h3 class="wrap-title">完本精品<i>完本总数24004本</i></h3>
+                    <div class="new-book-content">
+                        <div class="book-focus-wrap">
+                            <div class="end-book-focus">
+                                <ul>
+                                    <li class="act">
+                                        <div class="end-focus">
+                                            <a href=""><img src="img/index_img/end-img1.jpg" alt=""></a>
+                                        </div>
+                                        <h3><a href="">千寻疾遗言，我哥才是密室斗罗</a></h3>
+                                        <p class="author"><a href="">48万字</p>
+                                        <p class="total"><b>8,919</b>人在追</p>
+                                        <p class="intro">他，天使一脉最强天才！</p>
+                                        <a class="red-radius-btn" href="">书籍详细</a>
+                                    </li>
+                                    <li >
+                                        <div class="end-focus">
+                                            <a href=""><img src="img/index_img/end-img2.jpg" alt=""></a>
+                                        </div>
+                                        <h3><a href="">重生：原来宝藏女孩等了我十七年</a></h3>
+                                        <p class="author"><a href="">67万字</a></p>
+                                        <p class="total"><b>5,813</b>人在追</p>
+                                        <p class="intro">洛云天跳水救人死亡，他看到哭的撕心裂肺的楚瑾汐。</p>
+                                        <a class="red-radius-btn" href="">书籍详细</a>
+                                    </li> 
+                                    <li>
+                                        <div class="end-focus">
+                                            <a href=""><img src="img/index_img/end-img3.jpg" alt=""></a>
+                                        </div>
+                                        <h3><a href="">斗罗：污蔑我邪魂师，灭了</a></h3>
+                                        <p class="author"><a href="">47万字</a></p>
+                                        <p class="total"><b>6,980</b>人在追</p>
+                                        <p class="intro"> 先天魂力三十级，开局灭杀玉小刚！</p>
+                                        <a class="red-radius-btn" href="">书籍详细</a>
+                                    </li> 
+                                </ul>        
+                            </div>
+                        </div>
+                        <div class="new-book-list-wrap">
+                            <ul>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">画诡</a></h3>
+                                        <p>地狱不空，我不成佛。
+                                            面对地狱越来越多的恶诡，地藏王想了一个快速成佛的办法，干碎地狱……
+                                            恶诡乱人间，活人进地狱。
+                                            画诡传人李玄，靠一支画诡卷轴穿梭于阴世和阳世之间，一边送恶诡回地狱，一边把地狱里的活人捞出来。
+                                            额，收费的……
+                                            阳间收RMB，阴间收纸钱、收古董、收法宝、收女鬼……
+                                            这阴间的钱，比阳间的好赚啊。</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>玉叶留青</i>
+                                            </a>
+                                            <span>诡异悬疑</span>
+                                            <span>日更3千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">我被盗墓贼盯上了</a></h3>
+                                        <p>本书又名，《谢邀，我不是盗墓贼》《人在盗墓，我不是盗墓世家。》
+                                            一觉醒来，李枫发现自己来到盗墓世界，一心一意的做起文抄公，可是伴随着一座座古墓的出土，小说都成了现实。
+                                            尸蹩、僵尸、九头蛇柏都出现了，以至于，被请过去交代一下事实。
+                                            王凯旋：“老胡，你也看小说了？”
+                                            吴邪：“小哥，这是不是你的自传？”
+                                            潘子：“三爷，我最近都在看这本书。”
+                                            ……
+                                            天啊，自己竟然被盗墓贼盯上了，怎么办！</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>肉林酒池</i>
+                                            </a>
+                                            <span>诡异悬疑</span>
+                                            <span>日更3千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">双面利刃</a></h3>
+                                        <p>什么事情可以让人孤掷一注，连死都不怕？
+                                            任何事情都有两面性，即使是亲眼见到的，那也不一定是真相，那些看似不合逻辑的背后又隐藏着哪些不为人知的故事？
+                                            探案倒计时10、9、8......</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>徐婠</i>
+                                            </a>
+                                            <span>现实百态</span>
+                                            <span>日更1千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">画诡</a></h3>
+                                        <p>地狱不空，我不成佛。
+                                            面对地狱越来越多的恶诡，地藏王想了一个快速成佛的办法，干碎地狱……
+                                            恶诡乱人间，活人进地狱。
+                                            画诡传人李玄，靠一支画诡卷轴穿梭于阴世和阳世之间，一边送恶诡回地狱，一边把地狱里的活人捞出来。
+                                            额，收费的……
+                                            阳间收RMB，阴间收纸钱、收古董、收法宝、收女鬼……
+                                            这阴间的钱，比阳间的好赚啊。</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>玉叶留青</i>
+                                            </a>
+                                            <span>诡异悬疑</span>
+                                            <span>日更3千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">我被盗墓贼盯上了</a></h3>
+                                        <p>本书又名，《谢邀，我不是盗墓贼》《人在盗墓，我不是盗墓世家。》
+                                            一觉醒来，李枫发现自己来到盗墓世界，一心一意的做起文抄公，可是伴随着一座座古墓的出土，小说都成了现实。
+                                            尸蹩、僵尸、九头蛇柏都出现了，以至于，被请过去交代一下事实。
+                                            王凯旋：“老胡，你也看小说了？”
+                                            吴邪：“小哥，这是不是你的自传？”
+                                            潘子：“三爷，我最近都在看这本书。”
+                                            ……
+                                            天啊，自己竟然被盗墓贼盯上了，怎么办！</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>肉林酒池</i>
+                                            </a>
+                                            <span>诡异悬疑</span>
+                                            <span>日更3千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="new-book-img">
+                                        <a href=""><img src="img/index_img/new-book3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="new-book-info">
+                                        <h3><a href="">双面利刃</a></h3>
+                                        <p>什么事情可以让人孤掷一注，连死都不怕？
+                                            任何事情都有两面性，即使是亲眼见到的，那也不一定是真相，那些看似不合逻辑的背后又隐藏着哪些不为人知的故事？
+                                            探案倒计时10、9、8......</p>
+                                        <div class="new-book-state">
+                                            <a href="">
+                                                <img src="img/index_img/small_pic.png" alt="">
+                                                <i>徐婠</i>
+                                            </a>
+                                            <span>现实百态</span>
+                                            <span>日更1千+</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>
+                <div class="end-book-rank-wrap ">
+                    <ul class="rank-list">
+                        <h3 class="wrap-title"><a href="">完本排行</a></h3>
+                        <li>
+                            <div class="rank-book-info">
+                                <span class="rank-one">玄幻</span>
+                                <h3><a href="">星门：时光之主</a></h3>
+                                <p><cite>648</cite>万字</p>
+                                <p><a href="">老鹰吃小鸡</a></p>
+                            </div>
+                            <div class="rank-book-img">
+                                <a href="">
+                                    <img src="img/index_img/xinmen.jpg" alt="">
+                                </a>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li>
+                            
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>499万字</i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>499万字</i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>499万字</i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>499万字</i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>499万字</i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>499万字</i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>499万字</i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>499万字</i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rank-name-box">
+                                <a href="">完蛋！我成替身了！</a>
+                                <i>499万字</i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 最近更新 -->
+            <div class="new-update-wrap">
+                <div class="new-update">
+                    <h3 class="wrap-title">最近更新<i>完本总数24004本</i></h3>
+                    <div class="update-rec">
+                        <!-- 推荐 -->
+                        <div class="update-rec-list">
+                            <ul>
+                                <li>
+                                    <div class="update-book-cover">
+                                        <div class="rank-book-img">
+                                            <a href="">
+                                                <img src="img/index_img/new-update-img1.jpg" alt="">
+                                            </a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="update-book-info">
+                                        <h2><a href="">网购买到假货，反手加购一百万！</a></h2>
+                                        <p><span>日更千字</span></p>
+                                        <p><a href="">北域狂生</a></p>
+                                    </div>
+                                    <p class="intro">当忍气吞声、得过且过成为常态，这个世界需要一个格外较真的人</p>
+                                </li>
+                                <li>
+                                    <div class="update-book-cover">
+                                        <div class="rank-book-img">
+                                            <a href="">
+                                                <img src="img/index_img/new-update-img2.jpg" alt="">
+                                            </a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="update-book-info">
+                                        <h2><a href="">宇智波的人生模拟</a></h2>
+                                        <p><span>日更千字</span></p>
+                                        <p><a href="">打芒果</a></p>
+                                    </div>
+                                    <p class="intro">人在宇智波，马上灭族之夜。</p>
+                                </li>
+                                <li>
+                                    <div class="update-book-cover">
+                                        <div class="rank-book-img">
+                                            <a href="">
+                                                <img src="img/index_img/new-update-img3.jpg" alt="">
+                                            </a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="update-book-info">
+                                        <h2><a href="">港综之我是警察</a></h2>
+                                        <p><span>日更千字</span></p>
+                                        <p><a href="">会飞的坦克车</a></p>
+                                    </div>
+                                    <p class="intro">这是发生在港综的故事……</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 最近更新列表 -->
+                        <div class="new-update-list">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>轻小说</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">现实世界的精灵训练家</a></td>
+                                        <td><a class="update-section" href="">第91章以大晴天开局的对战</a></td>
+                                        <td><a class="update-author" href="">皎月寒鸦</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>轻小说</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">天界人的退休生活</a></td>
+                                        <td><a class="update-section" href="">第十八章穿越之后还有穿越，世界意识亲</a></td>
+                                        <td><a class="update-author" href="">一坨窝瓜</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>诸天无限</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">影视诸天：从正阳门下开始</a></td>
+                                        <td><a class="update-section" href="">第一百零八章孙少平劝告父亲（第七更）</a></td>
+                                        <td><a class="update-author" href="">先秦夏子</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="update-classify" href="">
+                                                <em>「</em>
+                                                <span>玄幻</span>
+                                                <em>」</em>
+                                            </a>
+                                        </td>
+                                        <td><a class="update-name" href="">造神入仙</a></td>
+                                        <td><a class="update-section" href="">“第三章斩异鬼！”</a></td>
+                                        <td><a class="update-author" href="">吃麻酱</a></td>
+                                        <td><i>08-01 16:29</i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- 大神俱乐部 -->
+                <div class="author-club">
+                    <h3 class="wrap-title">大神俱乐部</h3>
+                    <div class="update-rec-list">
+                        <ul>
+                            <li>
+                                <div class="author-pic">
+                                    <a href=""><img src="img/index_img/author-pic1.jpg" alt=""></a>
+                                </div>
+                                <div class="author-info">
+                                    <h3><a href="">闲听落花</a></h3>
+                                    <p class="type">阅文集团白金作家</p>
+                                    <p class="work"><span>代表作</span></p>
+                                    <p class="works">
+                                        <a href="">吾家阿囡</a>
+                                        <em>|</em>
+                                        <a href="">墨桑</a>
+                                        <em>|</em>
+                                        <a href="">锦桐</a>
+                                    </p>
+                                    <p class="intro">阅文集团白金作家，女性网络文学超人气作家，目前已创作十多部作品。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="author-pic">
+                                    <a href=""><img src="img/index_img/author-pic2.jpg" alt=""></a>
+                                </div>
+                                <div class="author-info">
+                                    <h3><a href="">言归正传</a></h3>
+                                    <p class="type">阅文集团白金作家</p>
+                                    <p class="work"><span>代表作</span></p>
+                                    <p class="works">
+                                        <a href="">这个人仙太过正经</a>
+                                        <em>|</em>
+                                        <a href="">我师兄实在太稳健了</a>
+                                    </p>
+                                    <p class="intro">阅文集团白金作家，稳健流开创者，文风干练，剧情写意，流畅自然，对人物刻画有独到之处。</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="author-pic">
+                                    <a href=""><img src="img/index_img/author-pic3.jpg" alt=""></a>
+                                </div>
+                                <div class="author-info">
+                                    <h3><a href="">卖报小郎君</a></h3>
+                                    <p class="type">阅文集团白金作家</p>
+                                    <p class="work"><span>代表作</span></p>
+                                    <p class="works">
+                                        <a href="">灵境行者</a>
+                                        <em>|</em>
+                                        <a href="">大奉打更人</a>
+                                    </p>
+                                    <p class="intro">阅文集团白金作家，文风清新自然，情节严谨不落俗套。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 限时免费 -->
+            <div class="time-limit-wrap">
+                <ul>
+                    <li class="time-box">
+                        <div class="limit-wrap">
+                            <h3>限时免费</h3>
+                            <p class="type">VIP章节免费读</p>
+                            <img src="img/index_img/time-limit-img.PNG" alt="">
+                            <p class="countdown"><i>1</i><em>天</em><i>11:45:14</i></p>
+                            <a href="">进入限免频道 ></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="limit-book-wrap">
+                            <div class="limit-book-cover">
+                                <a href=""><img src="img/index_img/time-limit-cover1.jpg" alt=""></a>
+                            </div>
+                            <h3><a href="">大明之南洋再起</a></h3>
+                            <s>5起点币/千字</s>
+                            <a href="">免费阅读</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="limit-book-wrap">
+                            <div class="limit-book-cover">
+                                <a href=""><img src="img/index_img/time-limit-cover2.jpg" alt=""></a>
+                            </div>
+                            <h3><a href="">贫僧修个道</a></h3>
+                            <s>5起点币/千字</s>
+                            <a href="">免费阅读</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="limit-book-wrap">
+                            <div class="limit-book-cover">
+                                <a href=""><img src="img/index_img/time-limit-cover3.jpg" alt=""></a>
+                            </div>
+                            <h3><a href="">我真不会演戏啊</a></h3>
+                            <s>5起点币/千字</s>
+                            <a href="">免费阅读</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="limit-book-wrap">
+                            <div class="limit-book-cover">
+                                <a href=""><img src="img/index_img/time-limit-cover4.jpg" alt=""></a>
+                            </div>
+                            <h3><a href="">我真是全能陪玩啊</a></h3>
+                            <s>5起点币/千字</s>
+                            <a href="">免费阅读</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="limit-book-wrap">
+                            <div class="limit-book-cover">
+                                <a href=""><img src="img/index_img/time-limit-cover5.jpg" alt=""></a>
+                            </div>
+                            <h3><a href="">重生三国从养鸡开始</a></h3>
+                            <s>5起点币/千字</s>
+                            <a href="">免费阅读</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="limit-book-wrap">
+                            <div class="limit-book-cover">
+                                <a href=""><img src="img/index_img/time-limit-cover6.jpg" alt=""></a>
+                            </div>
+                            <h3><a href="">诸天：从射雕开始</a></h3>
+                            <s>5起点币/千字</s>
+                            <a href="">免费阅读</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- 条件搜索栏 -->
+    <div class="filter-search-wrap">
+        <div class="container filter-search">
+            <div class="search-title">没有找到？试试这里</div>
+            <div class="search-list">
+                <select class="w72" name="" id="">
+                    <option selected value="">玄幻</option>
+                    <option value="">奇幻</option>
+                    <option value="">武侠</option>
+                    <option value="">仙侠</option>
+                    <option value="">都市</option>
+                    <option value="">现实</option>
+                    <option value="">军事</option>
+                    <option value="">历史</option>
+                    <option value="">游戏</option>
+                    <option value="">体育</option>
+                    <option value="">科幻</option>
+                    <option value="">诸天无限</option>
+                    <option value="">悬疑</option>
+                    <option value="">轻小说</option>
+                </select>
+                <select class="w72" name="" id="">
+                    <option selected value="">连载</option>
+                    <option value="">完本</option>
+                </select>
+                <select class="w72" name="" id="">
+                    <option selected value="">免费</option>
+                    <option value="">收费</option>
+                </select>
+                <select class="w140" name="" id="">
+                    <option selected value="">200万以上</option>
+                    <option value="">100万-200万字</option>
+                    <option value="">50万-100万字</option>
+                    <option value="">30万-50万字</option>
+                    <option value="">30万以下</option>
+                </select>
+                <select class="w140" name="" id="">
+                    <option selected value="">全部标签</option>
+                    <option value="">坚毅</option>
+                    <option value="">机智</option>
+                    <option value="">阳光</option>
+                    <option value="">热血</option>
+                    <option value="">励志</option>
+                </select>
+            </div>
+            <a href="">按条件找书</a>
+            <em></em>
+            <div class="everyone">
+                <p>大家都在搜</p>
+                <div class="key-words">
+                    <a href="">玄幻+连载+100万~200万</a>
+                    <a href="">都市+连载+vip</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-wrap container">
+            <p class="footer-text">上海网警提示：网络刷单是违法 切莫轻信有返利，网上交友套路多 卖惨要钱需当心，电子红包莫轻点 个人信息勿填写，仿冒客服来行骗 官方核实最重要，招工诈骗有套路 预交费用需谨慎，低价充值莫轻信 莫因游戏陷套路，连接WIFI要规范 确认安全再连接，抢购车票有章法 确认订单再付款，白条赊购慎使用 提升额度莫轻信，网购预付有风险 正规渠道很重要 如网民接到962110电话，请立即接听。</p>
+            <div class="friend-link">
+                <em>阅文集团旗下网站：</em>
+                <a href="">起点中文网</a>
+                <a href="">起点女生网</a>
+                <a href="">昆仑中文网</a>
+                <a href="">九天中文网</a>
+                <a href="">创世中文网</a>
+                <a href="">起点读书</a>
+                <a href="">QQ阅读</a>
+                <a href="">红袖添香</a>
+                <a href="">潇湘书院</a>
+                <a href="">云起书院</a>
+                <a href="">小说阅读网</a>
+                <a href="">言情小说吧</a>
+                <a href="">天书听书网</a>
+                <a href="">阅文悦读</a>
+                <a href="">作家助手</a>
+                <a href="">Webnovel</a>
+            </div>
+            <div class="footer-menu">
+                <a href="">关于起点</a>
+                <a href="">联系我们</a>
+                <a href="">加入我们</a>
+                <a href="">帮助中心</a>
+                <a href="">提交建议</a>
+                <a href="">举报中心</a>
+                <a href="">漏洞提交</a>
+            </div>
+            <div class="footer-copy">
+                <p>Copyright © 2002-2022 www.qidian.com All Rights Reserved 版权所有 上海玄霆娱乐信息科技有限公司</p>
+                <p><a href="">沪公网安备 31011502001275号</a> 增值电信业务经营许可证：沪B2-20080046 互联网ICP备案号： <a href="">沪B2-20080046-1</a> 出版经营许可证：新出发沪批字第 U3718 号</p>
+                <p>网络文化经营许可证：沪网文〔2021〕0374-020号 网络出版服务许可证：（署）网出证（沪）字第055号 营业执照</p>
+                <p>请所有作者发布作品时务必遵守国家互联网信息管理办法规定，我们拒绝任何色情小说，一经发现，即作删除！举报电话：010-59357051</p>
+                <p>本站所收录的作品、社区话题、用户评论、用户上传内容或图片等均属用户个人行为。如前述内容侵害您的权益，欢迎举报投诉，一经核实，立即删除，本站不承担任何责任</p>
+                <p>联系方式 总机 021-61870500 地址：中国（上海）自由贸易试验区碧波路690号6号楼101、201室</p>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="js/index.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

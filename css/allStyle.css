@@ -1,0 +1,542 @@
+main{
+    min-width: 1250px;
+    margin-top: 20px;
+}
+
+a{
+    transition: color 0.5s;
+}
+
+cite, em, i {
+    font-style: normal;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.main-wrap{
+    overflow: hidden;
+}
+
+.sidebar-wrap{
+    width: 216px;
+    overflow: hidden;
+    margin-right: 30px;
+    float: left;
+}
+
+.main-top-wrap{
+    width: 954px;
+    overflow: hidden;
+    float: right;
+}
+
+
+.top-link{
+    text-align: center;  
+    height: 28px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.top-link a{
+    height: 29px;
+    line-height: 26px;
+    width: 68px;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    border-top: 1px solid transparent;
+    
+}
+
+.top-link a:nth-of-type(1){
+    color: #ed4259;
+    font-weight: 700;
+    height: 26px;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-top: 2px solid #ed4259;
+}
+
+/* 左边标签选项框 */
+.selectedTag{
+    margin-bottom: 8px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.selectedTag p{
+    padding-top: 17px;
+}
+
+.selectedTag span{
+    display: block;
+    text-align: left;  
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.selectedTag a{
+    background: #ed4259;
+    border: 1px solid #ed4259;
+    color: #fff;
+    float: left;
+    font: 12px/18px PingFangSC-Regular,-apple-system,Simsun;
+    height: 18px;
+    margin: 0 8px 8px 0;
+    padding: 0 0 0 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.selectedTag a cite{
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+.select-list{
+    padding-top: 16px;
+    border-top: 1px solid #ebebeb;
+    overflow: hidden;
+}
+
+.select-list ul{
+    overflow: hidden;
+}
+
+.select-list li{
+    float: left;
+    height: 20px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.select-list h3{
+    font: 12px/18px PingFangSC-Regular,-apple-system,Simsun;
+    margin-bottom: 18px;
+    font-weight: bolder;
+}
+
+
+.select-list li a{
+    font: 12px/18px PingFangSC-Regular,-apple-system,Simsun;
+    padding: 0px 5px;
+    display: block;
+    line-height: 20px;
+    color: black;
+}
+
+.select-list li.act{
+    background-color: #333;
+}
+
+.select-list li.act a{
+   color: #fff;
+}
+
+
+.sub-type dl{
+    overflow: hidden;
+    width: 190px;
+    background-color: #f6f7f2;
+    border: 1px solid #e5e5e5;
+    padding: 8px 12px 0;
+    margin-bottom: 8px;
+}
+
+.sub-type dd{
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    height: 20px;
+    text-align: center;
+}
+
+.sub-type dd a{
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+    padding: 0px 5px;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.sub-type dd a:hover{
+    color: #ed4259;;
+}
+
+.sub-type dd.act{
+    background-color: #333;
+}
+
+.sub-type dd.act a{
+    color: #fff;
+ }
+
+
+.select-list li.more a{
+    color: #3f5a93;
+    padding-right: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.select-list li.more a span{
+    border-color: #3f5a93 transparent currentcolor;
+    border-style: solid solid none;
+    border-width: 5px 5px 0;
+    height: 0;
+    position: absolute;
+    right: -3px;
+    top: 5px;
+    width: 0;
+}
+
+.select-list li.more a span i{
+    border-color: #fff transparent currentcolor;
+    border-style: solid solid none;
+    border-width: 5px 5px 0;
+    height: 0;
+    position: absolute;
+    right: -5px;
+    top: -7px;
+    width: 0;
+}
+
+
+
+/* 右边 */
+
+.main-right-wrap{
+    width: 954px;
+    overflow: hidden;
+    background-color: #f7f6f2;
+    float: right;
+}
+
+.main-top-wrap{
+    width: 954px;
+    height: 40px;
+    background-color: #f7f6f2;
+    float: left;
+}
+
+.main-top-wrap ul{
+    margin-left: 10px;
+    width: 500px;
+}
+
+.main-top-wrap li{
+    padding-right: 30px;
+    float: left;
+}
+
+.main-top-wrap a{
+    font-size: 12px;
+    color: rgb(166, 166, 166);
+    display: inline-block;
+    line-height: 40px;
+}
+
+.main-top-wrap a:hover{
+    color: rgb(237, 66, 89);
+}
+
+.main-top-wrap a.act{
+    color: rgb(237, 66, 89); 
+    font-size: 14px;
+}
+
+.main-top-wrap a.act>span{
+    opacity: 1;
+}
+
+.main-top-wrap a>span{
+    opacity: 0;
+}
+
+.main-top-right{
+    overflow: hidden;
+    float: right;
+}
+
+.main-top-right p{
+    font-size: 12px;
+    color: rgb(166, 166, 166);
+    line-height: 40px;
+    float: left;
+}
+
+.main-top-right p>span{
+    color: black;
+}
+
+.main-top-right i{
+    color: #e6e6e6;
+    float: left;
+    font: 14px/18px Arial;
+    padding: 10px;
+}
+
+.selected{
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.main-top-right p:nth-of-type(3){
+    margin-right: 20px;
+}
+
+
+
+.main-top-right .main-p-curren{
+    color: black;
+}
+
+
+
+/* 右边的内容(详细) */
+.main-content-wrap{
+    overflow: hidden;
+    float: left;
+    background-color: #fff;
+    padding-top: 24px;
+}
+
+.content-list-wrap{
+    overflow: hidden;
+}
+
+.content-list-wrap li{
+    height: 162px;
+    width: 477px;
+    float: left;
+    padding-top: 25px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.content-list-wrap li:nth-of-type(1){
+    padding-top: 0px;
+    border-top: 0px;
+}
+
+.content-list-wrap li:nth-of-type(2){
+    padding-top: 0px;
+    border-top: 0px;
+}
+
+
+.book-img{
+    width: 102px;
+    height: 136px;
+    overflow: hidden;
+    float: left;
+}
+
+.book-img img{
+    width: 102px;
+    height: 136px;
+}
+
+.book-info{
+    width: 344px;
+    height: 136px;
+    float: right;
+    overflow: hidden;
+}
+
+.book-info h2{
+    font: 18px PingFangSC-Regular,HelveticaNeue-Light,Helvetica Neue Light,Microsoft YaHei,"sans-serif";
+    margin-bottom: 12px;
+}
+
+.book-info h2 a{
+    color: #262626;
+}
+
+.book-info h2 a:hover{
+    color: #ed4259;
+}
+
+.author{
+    margin-bottom: 7px;
+}
+
+.book-info p{
+    text-align: left;
+}
+
+.book-info p>img{
+    height: 16px;
+    width: 16px;
+    margin-top: 1px;
+    margin-right: 5px;
+    float: left;
+}
+
+.book-info p>a{
+    float: left;
+}
+
+.author{
+    font-size: 12px;
+    color: rgb(166, 166, 166);
+    text-decoration: none;
+}
+
+.author:hover{
+    color: black;
+}
+
+.tag{
+    font-size: 12px;
+    color: rgb(166, 166, 166);
+    text-decoration: none;
+}
+
+.tag:hover{
+    color: rgb(237, 66, 89); 
+}
+
+.book-info i{
+    color: #e6e6e6;
+    float: left;
+    font: 12px Arial;
+    padding: 0px 10px;
+}
+
+.book-info p>span{
+    font-size: 12px;
+    color: rgb(166, 166, 166);
+    float: left;
+}
+
+.intro{
+    color: #666;
+    font-size: 14px;
+    height: 48px;
+    width: 344px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    float: left;
+}
+
+.update{
+    width: 344px;
+    overflow: hidden;
+    float: left;
+}
+
+.update a{
+    font-size: 12px;
+    color: #3f5a93;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.update a:hover{
+    color: #2972cc;
+}
+
+/* 右边的内容（列表） */
+.main-list-wrap{
+    overflow: hidden;
+    float: left;
+    text-align: left;
+    background-color: #fff;
+    padding-top: 24px;
+    width: 954px;
+    display: none;
+}
+
+.main-list-wrap th{
+    font-size: 12px;
+}
+
+.th-one{
+    padding-left: 10px;
+}
+
+.list-table td{
+    font-size: 14px;
+    height: 40px;
+    border-bottom: 1px solid #e6e6e6;
+    overflow: auto;
+}
+
+.td-one{
+    width: 145px;
+}
+
+.td-one a:hover{
+    color: #ed4259;
+}
+
+.list-table a{
+    color: grey;
+}
+
+.book_name{
+    width: 165px;
+}
+
+.book_name a{
+    color: #262626;
+}
+
+.book_name a:hover{
+    color: #ed4259;
+}
+
+.book_chaper{
+    width: 320px;
+}
+
+.book_chaper a{
+    color: #666;
+}
+
+.book_chaper a:hover{
+    color: #262626;
+}
+
+.list-table .book_total{
+    width: 85px;
+    font-size: 12px;
+    color: grey;
+}
+
+.book_author{
+    width: 180px;
+}
+
+.book_author a:hover{
+    color: #262626;
+}
+
+.list-table .book_update{
+    width: 59px;
+    font-size: 12px;
+    color: gray;
+}
+
+
+
+
+

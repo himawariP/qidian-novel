@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>起点小说全部作品</title>
+
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/allStyle.css">
+    
+</head>
+<body>
+     
+    <!-- 头部导航栏 -->
+    <header class="top-nav">
+        <div class="container content">
+            <!-- 左边连接 -->
+            <div class="nav-link">
+                <a class="selectA" href="../index.html">起点中文网</a>
+                <a href="">起点女生网</a>
+                <em>|</em>
+                <a href="">创世中文网</a>
+                <em>|</em>
+                <a href="">云起书院</a>
+                <em>|</em>
+                <a href="">繁体版</a>
+            </div>
+            <!-- 登录|注册 -->
+            <div class="login-box">
+                <a id="login" href="javascript:;">登录</a>
+                <em>|</em>
+                <a id="register" href="register.html" target="_blank">注册</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 登录界面 -->
+    <div id="login_wrap" class="modal-login">
+        <div class="login-wrap">
+            <span id="close_login" class="close-login-wrap">×</span>
+            <ul class="login-tag">
+                <li class="act">账号登录</li>
+                <li>QQ登录</li>
+                <li>微信登录</li>
+            </ul>
+            <div class="login-switch-wrap">
+                <!-- 账号登录 -->
+                <div id="zh_login" class="zh-login-wrap">
+                    <dl>
+                        <dd>
+                            <span class="login-icon iconfont icon-renwu"></span>
+                            <input type="text" placeholder="手机/邮箱/用户名">
+                        </dd>
+                        <dd>
+                            <span class="login-icon  iconfont icon-lock"></span>
+                            <input type="text" placeholder="密码">
+                        </dd>
+                    </dl>
+                    <div class="auto-login-box">
+                        <input type="checkbox">
+                        <em>自动登录</em>
+                        <a href="">忘记密码</a>
+                    </div>
+                    <div class="login-btn">
+                        <button>登 录</button>
+                    </div>
+                    <div class="register-box">
+                        <a href="">手机验证码登录</a>
+                        <em>|</em>
+                        <a href="">免费注册</a>
+                    </div>
+                    <!-- 通用格式 -->
+                    <p class="login-common">登录即代表同意<a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a></p>
+                    <div class="order-way">
+                        <a href=""><span class="iconfont icon-zhifubaozhifu"></span></a>
+                        <a href=""><span class="iconfont icon-xinlangweibo"></span></a>
+                        <a href=""><span class="iconfont icon-BaiDu"></span></a>
+                    </div>
+                </div>
+                <!-- QQ登录 -->
+                <div id="qq_login" class="qq-login-wrap">
+                    <img src="../img/qq-logo.png" alt="">
+                    <p class="qq-login-tip">您将跳转至指定页面进行登陆操作</p>
+                    <div class="login-btn">
+                        <button>前去登录 QQ</button>
+                    </div>
+                    <!-- 通用格式 -->
+                    <p class="login-common">登录即代表同意<a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a></p>
+                </div>
+                <!-- 微信登陆 -->
+                <div id="wx_login" class="wx-login-wrap">
+                    <div class="QR-code">
+                        <span>这是二维码</span>
+                    </div>
+                    <p class="wx-login-tip">使用微信扫一扫登录</p>
+                    <p class="wx-login-tip">"起点中文网"</p>
+                    <!-- 通用格式 -->
+                    <p class="login-common">登录即代表同意<a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- logo和搜索栏 -->
+    <div class="logo-wrap">
+        <div class="container">
+            <!-- logo -->
+            <h1 class="logo"><a href="../index.html"><img src="../img/logo.png" alt=""></a></h1>
+            <!-- 搜索栏 -->
+            <p class="search-wrap">
+                <input type="text" placeholder="这个海贼背靠正义" autocomplete="off">
+                <a href="searchPage.html">
+                    <span>
+                        <!-- <span class="search-icon"><img src="../img/sousuo.png" alt=""></span> -->
+                        <span class="search-icon ">
+                            <span class="iconfont icon-sousuo"></span>
+                        </span>
+                    </span>
+                </a>
+            </p>
+            <!-- 我的书架 -->
+            <div class="book-shelf">
+                <a href="">
+                    <span>
+                        <span class="iconfont icon-tushu"></span>
+                    </span>
+                    <p>我的书架</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="main-nav-wrap">
+        <div class="container main-nav">
+            <ul>
+                <li><span>作品分类</span></li>
+                <li><a href="all.html">全部作品</a></li>
+                <li><a href="">排行</a></li>
+                <li><a href="">完本</a></li>
+                <li><a href="">免费</a></li>
+                <li><a href="">作家专区</a></li>
+                <li><a href="">搜索</a></li>
+                <li><a href="">女生网</a></li>
+                <li><a href=""><span class="iconfont icon-shouji"></span> 客户端</a></li>
+                <li><a href=""><span class="iconfont icon-shubiao"></span> 页游</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-wrap container">
+            <!-- 侧栏 -->
+            <div class="sidebar-wrap">
+                <div class="top-link">
+                    <a href="">男生</a>
+                    <a href="">女生</a>
+                    <a href="">出版</a>
+                </div>
+                <div id="selTag-filter" class="selectedTag">
+                    <p>
+                        <span>已选</span>
+                        <a href="javascript:;">全部<cite>×</cite></a>
+                        <a href="javascript:;">连载<cite>×</cite></a>
+                        <a href="javascript:;">免费<cite>×</cite></a>
+                        <a href="javascript:;">签约作品<cite>×</cite></a>
+                        <a href="javascript:;">100-200万字<cite>×</cite></a>
+                        <a href="javascript:;">七日内<cite>×</cite></a>
+                        <a href="javascript:;">特种兵<cite>×</cite></a>
+                    </p>
+                </div>
+                <div id="" class="select-list type-filter">
+                    <h3>分类</h3>
+                    <ul>
+                        <li class="act"><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">玄幻</a></li>
+                        <li><a href="javascript:;">奇幻</a></li>
+                        <li><a href="javascript:;">武侠</a></li>
+                        <li><a href="javascript:;">仙侠</a></li>
+                    </ul>
+                    <div class="sub-type">
+                        <dl>
+                            <!--  class="act" -->
+                            <dd><a href="javascript:;">东方大陆</a></dd>
+                            <dd><a href="javascript:;">异世大陆</a></dd>
+                            <dd><a href="javascript:;">王朝争霸</a></dd>
+                            <dd><a href="javascript:;">高武世界</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">现代魔法</a></dd>
+                            <dd><a href="javascript:;">剑与魔法</a></dd>
+                            <dd><a href="javascript:;">史诗奇幻</a></dd>
+                            <dd><a href="javascript:;">神秘幻想</a></dd>
+                            <dd><a href="javascript:;">历史神话</a></dd>
+                            <dd><a href="javascript:;">另类幻想</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">传统武术</a></dd>
+                            <dd><a href="javascript:;">武侠幻想</a></dd>
+                            <dd><a href="javascript:;">国术无双</a></dd>
+                            <dd><a href="javascript:;">古武未来</a></dd>
+                            <dd><a href="javascript:;">武侠同人</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">修真文明</a></dd>
+                            <dd><a href="javascript:;">幻想修仙</a></dd>
+                            <dd><a href="javascript:;">现代修真</a></dd>
+                            <dd><a href="javascript:;">神话修真</a></dd>
+                            <dd><a href="javascript:;">古典仙侠</a></dd>
+                        </dl>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;">都市</a></li>
+                        <li><a href="javascript:;">现实</a></li>
+                        <li><a href="javascript:;">军事</a></li>
+                        <li><a href="javascript:;">历史</a></li>
+                        <li><a href="javascript:;">游戏</a></li>
+                    </ul>
+                    <div class="sub-type hidden">
+                        <dl>
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;">体育</a></li>
+                        <li><a href="javascript:;">现实</a></li>
+                        <li><a href="javascript:;">诸天无限</a></li>
+                        <li><a href="javascript:;">悬疑</a></li>
+                    </ul>
+                    <div class="sub-type hidden">
+                        <dl>
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                    </div>
+                    <ul>
+                        <li><a href="javascript:;">轻小说</a></li>
+                        <li><a href="javascript:;">短篇</a></li>
+                    </ul>
+                    <div class="sub-type hidden">
+                        <dl>
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                        <dl class="hidden">
+                            <dd><a href="javascript:;">AAA</a></dd>
+                            <dd><a href="javascript:;">BBB</a></dd>
+                            <dd><a href="javascript:;">CCC</a></dd>
+                            <dd><a href="javascript:;">DDD</a></dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div id="" class="select-list action-filter">
+                    <h3>状态</h3>
+                    <ul>
+                        <li class="act"><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">连载</a></li>
+                        <li><a href="javascript:;">完本</a></li>
+                    </ul>
+                </div>
+                <div id="" class="select-list vip-filter">
+                    <h3>属性</h3>
+                    <ul>
+                        <li class="act"><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">免费</a></li>
+                        <li><a href="javascript:;">vip</a></li>
+                    </ul>
+                </div>
+                <div id="" class="select-list words-filter">
+                    <h3>字数</h3>
+                    <ul>
+                        <li class="act"><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">30万字以下</a></li>
+                        <li><a href="javascript:;">30-50万字以下</a></li>
+                        <li><a href="javascript:;">50-100万字以下</a></li>
+                        <li><a href="javascript:;">100-200万字以下</a></li>
+                        <li><a href="javascript:;">200万字以下</a></li>
+                    </ul>
+                </div>
+                <div id="" class="select-list quality-filter">
+                    <h3>品质</h3>
+                    <ul>
+                        <li class="act"><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">签约作品</a></li>
+                        <li><a href="javascript:;">精品小说</a></li>
+                    </ul>
+                </div>
+                <div id="" class="select-list ud-filter">
+                    <h3>更新时间</h3>
+                    <ul>
+                        <li class="act"><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">三日内</a></li>
+                        <li><a href="javascript:;">七日内</a></li>
+                        <li><a href="javascript:;">半月内</a></li>
+                        <li><a href="javascript:;">一月内</a></li>
+                    </ul>
+                </div>
+                <div id="" class="select-list tag-filter">
+                    <h3>标签</h3>
+                    <ul>
+                        <li class="act"><a href="javascript:;">全部</a></li>
+                        <li><a href="javascript:;">豪门</a></li>
+                        <li><a href="javascript:;">孤儿</a></li>
+                        <li><a href="javascript:;">盗贼</a></li>
+                        <li><a href="javascript:;">特工</a></li>
+                        <li><a href="javascript:;">黑客</a></li>
+                        <li><a href="javascript:;">明星</a></li>
+                        <li><a href="javascript:;">特种兵</a></li>
+                        <li><a href="javascript:;">杀手</a></li>
+                        <li><a href="javascript:;">老师</a></li>
+                        <li><a href="javascript:;">学生</a></li>
+                        <!-- <li id="more" class="more "><a href="javascript:;">展开<span><i></i></span></a></li> -->
+                        <li><a href="javascript:;">宠物</a></li>
+                        <li><a href="javascript:;">职场</a></li>
+                        <li><a href="javascript:;">爆笑</a></li>
+                        <li><a href="javascript:;">轻松</a></li>
+                        <li><a href="javascript:;">练功流</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 右边 -->
+            <div class="main-right-wrap">
+                <div class="main-top-wrap">
+                    <ul>
+                        <li><a class="act" href="">人气排序 <span>↓</span></a></li>
+                        <li><a href="">总收藏 <span>↓</span></a></li>
+                        <li><a href="">总字数 <span>↓</span></a></li>
+                        <li><a href="">推荐票 <span>↓</span></a></li>
+                    </ul>
+                    <div class="main-top-right">
+                        <p>共 <span>1097614</span> 本相关产品</p>
+                        <i>|</i> 
+                        <p id="xiangxi" class="selected main-p-curren">详细</p>
+                        <i>|</i> 
+                        <p id="liebiao" class="selected">列表</p>
+                    </div>
+                </div>
+                <!-- 详细列表页 -->
+                <div id="main-content-wrap" class="main-content-wrap">
+                    <ul class="content-list-wrap">
+                        <li>
+                            <div class="book-img">
+                                <a href="xiangxi.html"><img src="../img/夜的命名术.jpg" alt=""></a>
+                            </div>
+                            <div class="book-info">
+                                <h2><a href="xiangxi.html">夜的命名术</a></h2>
+                                <p class="author-wrap">
+                                    <img src="../img/user.bcb.png" alt="">
+                                    <a class="author" href="">会说话的肘子</a>
+                                    <i>|</i> 
+                                    <a class="tag" href="">都市</a>
+                                    <i>·</i> 
+                                    <a class="tag" href="">异术超能</a>
+                                    <i>|</i>
+                                    <span>连载</span>
+                                </p>
+                                <p class="intro">
+                                    蓝与紫的霓虹中，浓密的钢铁苍穹下，数据洪流的前端，是科技革命之后的世界，也是现实与虚幻的分界。钢铁与身体，过去与未来。这里，表世界与里世界并存，面前的一切，像是时间之墙近在眼前。黑暗逐渐笼罩。可你要明
+                                </p>
+                                <p class="update">
+                                    <span>349.33</span>
+                                    <span>万字</span>
+                                    <i>|</i> 
+                                    <a href="">901、成年礼</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="book-img">
+                                <a href=""><img src="../img/灵境行者.jpg" alt=""></a>
+                            </div>
+                            <div class="book-info">
+                                <h2><a href="">灵境行者</a></h2>
+                                <p class="author-wrap">
+                                    <img src="../img/user.bcb.png" alt="">
+                                    <a class="author" href="">卖报小郎君</a>
+                                    <i>|</i> 
+                                    <a class="tag" href="">科幻</a>
+                                    <i>·</i> 
+                                    <a class="tag" href="">进化变异</a>
+                                    <i>|</i>
+                                    <span>连载</span>
+                                </p>
+                                <p class="intro">
+                                    亘古通今，传闻世有灵境。关于灵境的说法，历朝历代的名人雅士众说纷纭，诗中记载：“自齐至唐，兹山濅荒，灵境寂寥，罕有人游。”“灵境不可状，鬼工谅难求。”
+                                </p>
+                                <p class="update">
+                                    <span>91.43</span>
+                                    <span>万字</span>
+                                    <i>|</i> 
+                                    <a href="">第两百二十五章始料未及的变化礼</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="book-img">
+                                <a href=""><img src="../img/不科学御兽.jpg" alt=""></a>
+                            </div>
+                            <div class="book-info">
+                                <h2><a href="">不科学御兽</a></h2>
+                                <p class="author-wrap">
+                                    <img src="../img/user.bcb.png" alt="">
+                                    <a class="author" href="">轻泉流响</a>
+                                    <i>|</i> 
+                                    <a class="tag" href="">玄幻</a>
+                                    <i>·</i> 
+                                    <a class="tag" href="">异世大陆</a>
+                                    <i>|</i>
+                                    <span>连载</span>
+                                </p>
+                                <p class="intro">
+                                    这是一个以御兽为主流的异世界。动物，植物，元素，死灵，机械……九尾炎狐，生命古树，雷云精灵，骷髅君主，机械舰娘乃至孕育出灵的古董刀剑皆可作为宠兽，而契约、培养，御使它们的人类，则被统称为御兽师！神话学
+                                </p>
+                                <p class="update">
+                                    <span>275.79</span>
+                                    <span>万字</span>
+                                    <i>|</i> 
+                                    <a href="">请假一天</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="book-img">
+                                <a href=""><img src="../img/这游戏也太真实了.jpg" alt=""></a>
+                            </div>
+                            <div class="book-info">
+                                <h2><a href="">这游戏也太真实了</a></h2>
+                                <p class="author-wrap">
+                                    <img src="../img/user.bcb.png" alt="">
+                                    <a class="author" href="">晨星LL</a>
+                                    <i>|</i> 
+                                    <a class="tag" href="">轻小说</a>
+                                    <i>·</i> 
+                                    <a class="tag" href="">原生幻想</a>
+                                    <i>|</i>
+                                    <span>连载</span>
+                                </p>
+                                <p class="intro">
+                                    这游戏也太真实了叭！搬砖、跑腿、捡垃圾、送快递……公司最多能让你体会到996的艰辛，在这里你能体会到超级加倍的007。好了，不废话了，伟大的管理者大人喊我去搬砖了。那位大人说了，只要我们努力献上自己的
+                                </p>
+                                <p class="update">
+                                    <span>272.94</span>
+                                    <span>万字</span>
+                                    <i>|</i> 
+                                    <a href="">第470章鹰击长空</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="book-img">
+                                <a href=""><img src="../img/深空彼岸.jpg" alt=""></a>
+                            </div>
+                            <div class="book-info">
+                                <h2><a href="">深空彼岸</a></h2>
+                                <p class="author-wrap">
+                                    <img src="../img/user.bcb.png" alt="">
+                                    <a class="author" href="">辰东</a>
+                                    <i>|</i> 
+                                    <a class="tag" href="">都市</a>
+                                    <i>·</i> 
+                                    <a class="tag" href="">异术超能</a>
+                                    <i>|</i>
+                                    <span>连载</span>
+                                </p>
+                                <p class="intro">
+                                    浩瀚的宇宙中，一片星系的生灭，也不过是刹那的斑驳流光。仰望星空，总有种结局已注定的伤感，千百年后你我在哪里？家国，文明火光，地球，都不过是深空中的一粒尘埃。星空一瞬，人间千年。虫鸣一世不过秋，你我一样
+                                </p>
+                                <p class="update">
+                                    <span>309.56</span>
+                                    <span>万字</span>
+                                    <i>|</i> 
+                                    <a href="">新篇第309章大圣出击</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 简易列表页 -->
+                <div id="main-list-wrap" class="main-list-wrap">
+                    <table class="list-table">
+                        <tr>
+                            <th class="th-one">类别</th>
+                            <th>小说书名</th>
+                            <th>最新章节</th>
+                            <th>字数</th>
+                            <th>小说作者</th>
+                            <th>更新时间</td>
+                        </tr>
+                        <tr>
+                            <td class="td-one"><a href=""><em>「</em>科幻</a><i class="point">·</i><a href="">进化变异<em>」</em></a></td>
+                            <td class="book_name"><a  href="">夜的命名术</a></td>
+                            <td class="book_chaper"><a href="">901、成年礼</a></td>
+                            <td class="book_total"><span>349.33</span>万字</td>
+                            <td class="book_author"><a href="">会说话的肘子</a></td>
+                            <td class="book_update">18小时前</td>
+                        </tr>
+                        <tr>
+                            <td class="td-one"><a href=""><em>「</em>科幻</a><i class="point">·</i><a href="">进化变异<em>」</em></a></td>
+                            <td class="book_name"><a  href="">灵境行者</a></td>
+                            <td class="book_chaper"><a href="">第两百二十五章始料未及的变化</a></td>
+                            <td class="book_total"><span>91.43</span>万字</td>
+                            <td class="book_author"><a href="">卖报小郎君</a></td>
+                            <td class="book_update">8小时前</td>
+                        </tr>
+                        <tr>
+                            <td class="td-one"><a href=""><em>「</em>玄幻</a><i class="point">·</i><a href="">异世大陆<em>」</em></a></td>
+                            <td class="book_name"><a  href="">不科学御兽</a></td>
+                            <td class="book_chaper"><a href="">请假一天</a></td>
+                            <td class="book_total"><span>275.79</span>万字</td>
+                            <td class="book_author"><a href="">轻泉流响</a></td>
+                            <td class="book_update">3小时前</td>
+                        </tr>
+                        <tr>
+                            <td class="td-one"><a href=""><em>「</em>轻小说</a><i class="point">·</i><a href="">原生幻想<em>」</em></a></td>
+                            <td class="book_name"><a  href="">这游戏也太真实了</a></td>
+                            <td class="book_chaper"><a href="">第470章鹰击长空</a></td>
+                            <td class="book_total"><span>272.94</span>万字</td>
+                            <td class="book_author"><a href="">晨星LL</a></td>
+                            <td class="book_update">2小时前</td>
+                        </tr>
+                        <tr>
+                            <td class="td-one"><a href=""><em>「</em>都市</a><i class="point">·</i><a href="">异术超能<em>」</em></a></td>
+                            <td class="book_name"><a  href="">深空彼岸</a></td>
+                            <td class="book_chaper"><a href="">新篇第309章大圣出击</a></td>
+                            <td class="book_total"><span>309.56</span>万字</td>
+                            <td class="book_author"><a href="">辰东</a></td>
+                            <td class="book_update">9小时前</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <!-- 广告 -->
+    <!-- <div class="banner-wrap container">
+        <p>广告</p>
+    </div> -->
+
+    <footer>
+        <div class="footer-wrap container">
+            <p class="footer-text">上海网警提示：网络刷单是违法 切莫轻信有返利，网上交友套路多 卖惨要钱需当心，电子红包莫轻点 个人信息勿填写，仿冒客服来行骗 官方核实最重要，招工诈骗有套路 预交费用需谨慎，低价充值莫轻信 莫因游戏陷套路，连接WIFI要规范 确认安全再连接，抢购车票有章法 确认订单再付款，白条赊购慎使用 提升额度莫轻信，网购预付有风险 正规渠道很重要 如网民接到962110电话，请立即接听。</p>
+            <div class="friend-link">
+                <em>阅文集团旗下网站：</em>
+                <a href="">起点中文网</a>
+                <a href="">起点女生网</a>
+                <a href="">昆仑中文网</a>
+                <a href="">九天中文网</a>
+                <a href="">创世中文网</a>
+                <a href="">起点读书</a>
+                <a href="">QQ阅读</a>
+                <a href="">红袖添香</a>
+                <a href="">潇湘书院</a>
+                <a href="">云起书院</a>
+                <a href="">小说阅读网</a>
+                <a href="">言情小说吧</a>
+                <a href="">天书听书网</a>
+                <a href="">阅文悦读</a>
+                <a href="">作家助手</a>
+                <a href="">Webnovel</a>
+            </div>
+            <div class="footer-menu">
+                <a href="">关于起点</a>
+                <a href="">联系我们</a>
+                <a href="">加入我们</a>
+                <a href="">帮助中心</a>
+                <a href="">提交建议</a>
+                <a href="">举报中心</a>
+                <a href="">漏洞提交</a>
+            </div>
+            <div class="footer-copy">
+                <p>Copyright © 2002-2022 www.qidian.com All Rights Reserved 版权所有 上海玄霆娱乐信息科技有限公司</p>
+                <p><a href="">沪公网安备 31011502001275号</a> 增值电信业务经营许可证：沪B2-20080046 互联网ICP备案号： <a href="">沪B2-20080046-1</a> 出版经营许可证：新出发沪批字第 U3718 号</p>
+                <p>网络文化经营许可证：沪网文〔2021〕0374-020号 网络出版服务许可证：（署）网出证（沪）字第055号 营业执照</p>
+                <p>请所有作者发布作品时务必遵守国家互联网信息管理办法规定，我们拒绝任何色情小说，一经发现，即作删除！举报电话：010-59357051</p>
+                <p>本站所收录的作品、社区话题、用户评论、用户上传内容或图片等均属用户个人行为。如前述内容侵害您的权益，欢迎举报投诉，一经核实，立即删除，本站不承担任何责任</p>
+                <p>联系方式 总机 021-61870500 地址：中国（上海）自由贸易试验区碧波路690号6号楼101、201室</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- 详细和列表切换 -->
+    <script>
+        var main_list_wrap = document.getElementById('main-list-wrap');
+        var main_content_wrap = document.getElementById('main-content-wrap');
+
+        var xiangxi = document.getElementById('xiangxi');
+        var liebiao = document.getElementById('liebiao');
+
+        xiangxi.onclick =function(){
+            main_list_wrap.style.display = 'none';
+            main_content_wrap.style.display = 'block';
+            xiangxi.setAttribute('class','selected main-p-curren');
+            liebiao.setAttribute('class','selected ');
+        }
+
+        liebiao.onclick =function(){
+            main_list_wrap.style.display = 'block';
+            main_content_wrap.style.display = 'none';
+            liebiao.setAttribute('class','selected main-p-curren');
+            xiangxi.setAttribute('class','selected ');
+        }
+    </script>
+
+    <script src="../js/selectedTag.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+</html>

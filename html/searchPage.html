@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>起点小说查询</title>
+
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <link rel="stylesheet" href="../css/xiangxi.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/searchPage.css">
+</head>
+<body>
+    <header>
+        <div class="xx-top-nav container">
+            <ul class="xx-nav-left">
+                <li class="xx-site">
+                    <a id="site" href="../index.html"><span class="third-remove"></span></a>
+                    <div class="top-nav-hidden">
+                        <ul>
+                            <li><a href="">起点女生网</a></li>
+                            <li><a href="">创世中文网</a></li>
+                            <li><a href="">云起书院</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">玄幻</a></li>
+                <li><a href="">都市</a></li>
+                <li><a href="">仙侠</a></li>
+                <li><a href="">科幻</a></li>
+                <li><a href="">诸天无限</a></li>
+                <li><a href="">游戏</a></li>
+                <li><a href="">历史</a></li>
+                <li><a href="">排行</a></li>
+                <li id="more" class="more">
+                    <a href="javascript:;">更多<span class="third-remove"></span></a>
+                    <div class="top-nav-hidden">
+                        <ul>
+                            <li><a href="all.html" target="_blank">全部作品</a></li>
+                            <li><a href="">轻小说</a></li>
+                            <li><a href="">奇幻</a></li>
+                            <li><a href="">武侠</a></li>
+                            <li><a href="">悬疑</a></li>
+                            <li><a href="">军事</a></li>
+                            <li><a href="">现实</a></li>
+                            <li><a href="">体育</a></li>
+                            <li><a href="">短篇</a></li>
+                        </ul>
+                    </div>
+                </li>               
+            </ul>
+            <div class="xx-nav-right">   
+                <ul>
+                    <li class="xx-search-wrap">
+                        
+                    </li>
+                    <li class="line"></li>
+                    <li class="xx-lr">
+                        <a id="login" href="javascript:;">登录</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="register.html" target="_blank">注册</a>
+                    </li>
+                    <li class="line"></li>
+                    <li class="xx-myBook">
+                        <a href="">
+                            <span>
+                                <span class="iconfont icon-tushu"></span>
+                            </span>
+                            我的书架
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <main class="container">
+            <!-- 顶部搜索栏 -->
+            <div class="search-top-wrap">
+                <div class="search-top-box">
+                    <input type="text">
+                    <button>搜 索</button>
+                </div>
+                <p>
+                    热门搜索：
+                    <a href="">斗罗</a>
+                    <a href="">斗破</a>
+                    <a href="">海贼</a>
+                    <a href="">火影</a>
+                    <a href="">遮天</a>
+                </p>
+            </div>
+            <!--搜索结果窗口 -->
+            <div class="result-wrap">
+                <!-- 左边：条件选框和结果 -->
+                <div class="main-content-wrap">
+                    <!-- 条件选框 -->
+                    <div class="classify-wrap">
+                        <ul>
+                            <li>
+                                <em>已选</em>
+                                <dl class="classify-sel-tags">
+                                    <dd class="act"><span>全部</span></dd>
+                                    <dd><span>男生 ×</span></dd>
+                                    <dd><span>轻小说 ×</span></dd>
+                                    <dd><span>连载 ×</span></dd>
+                                    <dd><span>免费 ×</span></dd>
+                                    <dd><span>30万字以下 ×</span></dd>
+                                    <dd><span>签约作品 ×</span></dd>
+                                    <dd><span>一月内 ×</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <em>站点</em>
+                                <dl class="sex-tags">
+                                    <dd><span>女生</span></dd>
+                                    <dd><span>男生</span></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <em>分类</em>
+                                <dl class="classify-tags">
+                                    <dd><span>轻小说</span><i>(3362)</i></dd>
+                                    <dd><span>玄幻</span><i>(2016)</i></dd>
+                                    <dd><span>诸天无限</span><i>(285)</i></dd>
+                                    <dd><span>古代言情</span><i>(214)</i></dd>
+                                    <dd><span>短篇</span><i>(195)</i></dd>
+                                    <dd><span>科幻</span><i>(186)</i></dd>
+                                    <dd><span>仙侠</span><i>(177)</i></dd>
+                                    <dd><span>奇幻</span><i>(172)</i></dd>
+                                    <dd><span>都市</span><i>(125)</i></dd>
+                                    <dd><span>小说</span><i>(116)</i></dd>
+                                    <dd><span>历史</span><i>(82)</i></dd>
+                                    <dd><span>游戏</span><i>(74)</i></dd>
+                                    <dd><span>玄幻言情</span><i>(57)</i></dd>
+                                    <dd><span>武侠</span><i>(50)</i></dd>
+                                    <dd><span>现代言情</span><i>(50)</i></dd>
+                                    <dd><span>文字</span><i>(35)</i></dd>
+                                    <dd><span>体育</span><i>(31)</i></dd>
+                                    <dd><span>悬疑</span><i>(25)</i></dd>
+                                    <dd><span>仙侠奇缘</span><i>(25)</i></dd>
+                                    <dd><span>青春文字</span><i>(20)</i></dd>
+                                    <dd><span>传记</span><i>(20)</i></dd>
+                                    <dd><span>科幻空间</span><i>(20)</i></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <em>状态</em>
+                                <dl class="state-tags">
+                                    <dd><span>连载</span><i>(2726)</i></dd>
+                                    <dd><span>完本</span><i>(4816)</i></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <em>属性</em>
+                                <dl class="VIP-tags">
+                                    <dd><span>免费</span><i>(5344)</i></dd>
+                                    <dd><span>VIP</span><i>(2198)</i></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <em>字数</em>
+                                <dl class="words-tags">
+                                    <dd><span>30万字以下</span><i>(5445)</i></dd>
+                                    <dd><span>30-50万字</span><i>(702)</i></dd>
+                                    <dd><span>50-100万字</span><i>(845)</i></dd>
+                                    <dd><span>100-200万字</span><i>(418)</i></dd>
+                                    <dd><span>200万字以上</span><i>(132)</i></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <em>品质</em>
+                                <dl class="quality-tags">
+                                    <dd><span>签约作品</span><i>(2646)</i></dd>
+                                    <dd><span>精品小说</span><i>(69)</i></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <em>更新时间</em>
+                                <dl class="update-tags">
+                                    <dd><span>一月内</span></dd>
+                                    <dd><span>半月内</span></dd>
+                                    <dd><span>七日内</span></dd>
+                                    <dd><span>三日内</span></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 排序条件 -->
+                    <div class="tool-bar">
+                        <ul>
+                            <li class="act">搜索相关性<span>⬇</span></li>
+                            <li>更新时间<span>⬇</span></li>
+                            <li>总收藏<span>⬇</span></li>
+                            <li>总字数<span>⬇</span></li>
+                            <li>推荐票<span>⬇</span></li>
+                        </ul>
+                        <p>
+                            共<span>6408</span>本相关作品
+                        </p>
+                    </div>
+
+                    <!-- 作品列表 -->
+                    <div class="result-book-wrap">
+                        <ul>
+                            <li>
+                                <div class="result-book-img">
+                                    <a href=""><img src="../img/search-wrap-img/search-img1.jpg" alt=""></a>
+                                </div>
+                                <div class="book-mid-info">
+                                    <h2><a href="">斗罗之双子斗罗</a></h2>
+                                    <p class="info">
+                                        <img src="../img/index_img/small_pic.png" alt="">
+                                        <a href="">浮世丶</a>
+                                        <em>|</em>
+                                        <a href="">轻小说</a>
+                                        <em>|</em>
+                                        <a href="">完结</a>
+                                    </p>
+                                    <p class="intro">
+                                        携千珏之力穿越斗罗世界，凝千珏武魂，成千珏神位，且看少年如何一步步成为大陆最强之人。PS：本书走唐三路线，量大管饱。若是介意，请看武魂殿路线新书，《你的武魂到底是什么！》。 
+                                    </p>
+                                    <p class="update">
+                                        <a href="">最新更新 完本感言，新书已发。</a>
+                                        <em>·</em>
+                                        <span>2021-03-26</span>
+                                    </p>
+                                </div>
+                                <div class="book-right-info">
+                                    <p>223.3万<span>总字数</span></p>
+                                    <p>9099<span>总推荐</span></p>
+                                    <button class="red_btn">书籍详细</button>
+                                    <button class="blue_btn">加入书架</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-book-img">
+                                    <a href=""><img src="../img/search-wrap-img/search-img2.jpg" alt=""></a>
+                                </div>
+                                <div class="book-mid-info">
+                                    <h2><a href="">斗罗之核爆斗罗</a></h2>
+                                    <p class="info">
+                                        <img src="../img/index_img/small_pic.png" alt="">
+                                        <a href="">佛前献菊</a>
+                                        <em>|</em>
+                                        <a href="">轻小说</a>
+                                        <em>|</em>
+                                        <a href="">完结</a>
+                                    </p>
+                                    <p class="intro">
+                                        他是死亡的化身。亦是万物的终结。他的身后只有毁灭。却也伴随着‘新生’。左手核能，右手辐射。。愿光辉的核平降临斗罗大陆!
+                                        少年穿越斗罗，伴随着武魂写轮眼变异成为辐射眼，已然成为高浓度辐射源的他，究竟该何去何从？ps：不跟史莱克，不拜大师，
+                                        也不走武魂殿ps2：群号：1109662059ps3:全起点唯一一本上了三江的斗罗同人，质量有保障，欢迎入坑  
+                                    </p>
+                                    <p class="update">
+                                        <a href="">最新更新 py推书</a>
+                                        <em>·</em>
+                                        <span>2021-03-26</span>
+                                    </p>
+                                </div>
+                                <div class="book-right-info">
+                                    <p>107.63万<span>总字数</span></p>
+                                    <p>6.74<span>总推荐</span></p>
+                                    <button class="red_btn">书籍详细</button>
+                                    <button class="blue_btn">加入书架</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-book-img">
+                                    <a href=""><img src="../img/search-wrap-img/search-img3.jpg" alt=""></a>
+                                </div>
+                                <div class="book-mid-info">
+                                    <h2><a href="">斗罗之财神斗罗</a></h2>
+                                    <p class="info">
+                                        <img src="../img/index_img/small_pic.png" alt="">
+                                        <a href="">梦幻后主</a>
+                                        <em>|</em>
+                                        <a href="">轻小说</a>
+                                        <em>|</em>
+                                        <a href="">完结</a>
+                                    </p>
+                                    <p class="intro">
+                                        金宝在古玩地摊被神秘钱币影响穿越斗罗大陆，觉醒武魂金钱。
+                                        父母健在，家境殷实，又不是先天满魂力！貌似不是主角的命的金宝决定混入武魂殿发育一段时间…… 
+                                    </p>
+                                    <p class="update">
+                                        <a href="">最新更新 第五百三十八章财神归位</a>
+                                        <em>·</em>
+                                        <span>2020-10-31</span>
+                                    </p>
+                                </div>
+                                <div class="book-right-info">
+                                    <p>113.31万<span>总字数</span></p>
+                                    <p>3341<span>总推荐</span></p>
+                                    <button class="red_btn">书籍详细</button>
+                                    <button class="blue_btn">加入书架</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-book-img">
+                                    <a href=""><img src="../img/search-wrap-img/search-img1.jpg" alt=""></a>
+                                </div>
+                                <div class="book-mid-info">
+                                    <h2><a href="">斗罗之双子斗罗</a></h2>
+                                    <p class="info">
+                                        <img src="../img/index_img/small_pic.png" alt="">
+                                        <a href="">浮世丶</a>
+                                        <em>|</em>
+                                        <a href="">轻小说</a>
+                                        <em>|</em>
+                                        <a href="">完结</a>
+                                    </p>
+                                    <p class="intro">
+                                        携千珏之力穿越斗罗世界，凝千珏武魂，成千珏神位，且看少年如何一步步成为大陆最强之人。PS：本书走唐三路线，量大管饱。若是介意，请看武魂殿路线新书，《你的武魂到底是什么！》。 
+                                    </p>
+                                    <p class="update">
+                                        <a href="">最新更新 完本感言，新书已发。</a>
+                                        <em>·</em>
+                                        <span>2021-03-26</span>
+                                    </p>
+                                </div>
+                                <div class="book-right-info">
+                                    <p>223.3万<span>总字数</span></p>
+                                    <p>9099<span>总推荐</span></p>
+                                    <button class="red_btn">书籍详细</button>
+                                    <button class="blue_btn">加入书架</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-book-img">
+                                    <a href=""><img src="../img/search-wrap-img/search-img2.jpg" alt=""></a>
+                                </div>
+                                <div class="book-mid-info">
+                                    <h2><a href="">斗罗之核爆斗罗</a></h2>
+                                    <p class="info">
+                                        <img src="../img/index_img/small_pic.png" alt="">
+                                        <a href="">佛前献菊</a>
+                                        <em>|</em>
+                                        <a href="">轻小说</a>
+                                        <em>|</em>
+                                        <a href="">完结</a>
+                                    </p>
+                                    <p class="intro">
+                                        他是死亡的化身。亦是万物的终结。他的身后只有毁灭。却也伴随着‘新生’。左手核能，右手辐射。。愿光辉的核平降临斗罗大陆!
+                                        少年穿越斗罗，伴随着武魂写轮眼变异成为辐射眼，已然成为高浓度辐射源的他，究竟该何去何从？ps：不跟史莱克，不拜大师，
+                                        也不走武魂殿ps2：群号：1109662059ps3:全起点唯一一本上了三江的斗罗同人，质量有保障，欢迎入坑  
+                                    </p>
+                                    <p class="update">
+                                        <a href="">最新更新 py推书</a>
+                                        <em>·</em>
+                                        <span>2021-03-26</span>
+                                    </p>
+                                </div>
+                                <div class="book-right-info">
+                                    <p>107.63万<span>总字数</span></p>
+                                    <p>6.74<span>总推荐</span></p>
+                                    <button class="red_btn">书籍详细</button>
+                                    <button class="blue_btn">加入书架</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-book-img">
+                                    <a href=""><img src="../img/search-wrap-img/search-img3.jpg" alt=""></a>
+                                </div>
+                                <div class="book-mid-info">
+                                    <h2><a href="">斗罗之财神斗罗</a></h2>
+                                    <p class="info">
+                                        <img src="../img/index_img/small_pic.png" alt="">
+                                        <a href="">梦幻后主</a>
+                                        <em>|</em>
+                                        <a href="">轻小说</a>
+                                        <em>|</em>
+                                        <a href="">完结</a>
+                                    </p>
+                                    <p class="intro">
+                                        金宝在古玩地摊被神秘钱币影响穿越斗罗大陆，觉醒武魂金钱。
+                                        父母健在，家境殷实，又不是先天满魂力！貌似不是主角的命的金宝决定混入武魂殿发育一段时间…… 
+                                    </p>
+                                    <p class="update">
+                                        <a href="">最新更新 第五百三十八章财神归位</a>
+                                        <em>·</em>
+                                        <span>2020-10-31</span>
+                                    </p>
+                                </div>
+                                <div class="book-right-info">
+                                    <p>113.31万<span>总字数</span></p>
+                                    <p>3341<span>总推荐</span></p>
+                                    <button class="red_btn">书籍详细</button>
+                                    <button class="blue_btn">加入书架</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-book-img">
+                                    <a href=""><img src="../img/search-wrap-img/search-img1.jpg" alt=""></a>
+                                </div>
+                                <div class="book-mid-info">
+                                    <h2><a href="">斗罗之双子斗罗</a></h2>
+                                    <p class="info">
+                                        <img src="../img/index_img/small_pic.png" alt="">
+                                        <a href="">浮世丶</a>
+                                        <em>|</em>
+                                        <a href="">轻小说</a>
+                                        <em>|</em>
+                                        <a href="">完结</a>
+                                    </p>
+                                    <p class="intro">
+                                        携千珏之力穿越斗罗世界，凝千珏武魂，成千珏神位，且看少年如何一步步成为大陆最强之人。PS：本书走唐三路线，量大管饱。若是介意，请看武魂殿路线新书，《你的武魂到底是什么！》。 
+                                    </p>
+                                    <p class="update">
+                                        <a href="">最新更新 完本感言，新书已发。</a>
+                                        <em>·</em>
+                                        <span>2021-03-26</span>
+                                    </p>
+                                </div>
+                                <div class="book-right-info">
+                                    <p>223.3万<span>总字数</span></p>
+                                    <p>9099<span>总推荐</span></p>
+                                    <button class="red_btn">书籍详细</button>
+                                    <button class="blue_btn">加入书架</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-book-img">
+                                    <a href=""><img src="../img/search-wrap-img/search-img2.jpg" alt=""></a>
+                                </div>
+                                <div class="book-mid-info">
+                                    <h2><a href="">斗罗之核爆斗罗</a></h2>
+                                    <p class="info">
+                                        <img src="../img/index_img/small_pic.png" alt="">
+                                        <a href="">佛前献菊</a>
+                                        <em>|</em>
+                                        <a href="">轻小说</a>
+                                        <em>|</em>
+                                        <a href="">完结</a>
+                                    </p>
+                                    <p class="intro">
+                                        他是死亡的化身。亦是万物的终结。他的身后只有毁灭。却也伴随着‘新生’。左手核能，右手辐射。。愿光辉的核平降临斗罗大陆!
+                                        少年穿越斗罗，伴随着武魂写轮眼变异成为辐射眼，已然成为高浓度辐射源的他，究竟该何去何从？ps：不跟史莱克，不拜大师，
+                                        也不走武魂殿ps2：群号：1109662059ps3:全起点唯一一本上了三江的斗罗同人，质量有保障，欢迎入坑  
+                                    </p>
+                                    <p class="update">
+                                        <a href="">最新更新 py推书</a>
+                                        <em>·</em>
+                                        <span>2021-03-26</span>
+                                    </p>
+                                </div>
+                                <div class="book-right-info">
+                                    <p>107.63万<span>总字数</span></p>
+                                    <p>6.74<span>总推荐</span></p>
+                                    <button class="red_btn">书籍详细</button>
+                                    <button class="blue_btn">加入书架</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="result-book-img">
+                                    <a href=""><img src="../img/search-wrap-img/search-img3.jpg" alt=""></a>
+                                </div>
+                                <div class="book-mid-info">
+                                    <h2><a href="">斗罗之财神斗罗</a></h2>
+                                    <p class="info">
+                                        <img src="../img/index_img/small_pic.png" alt="">
+                                        <a href="">梦幻后主</a>
+                                        <em>|</em>
+                                        <a href="">轻小说</a>
+                                        <em>|</em>
+                                        <a href="">完结</a>
+                                    </p>
+                                    <p class="intro">
+                                        金宝在古玩地摊被神秘钱币影响穿越斗罗大陆，觉醒武魂金钱。
+                                        父母健在，家境殷实，又不是先天满魂力！貌似不是主角的命的金宝决定混入武魂殿发育一段时间…… 
+                                    </p>
+                                    <p class="update">
+                                        <a href="">最新更新 第五百三十八章财神归位</a>
+                                        <em>·</em>
+                                        <span>2020-10-31</span>
+                                    </p>
+                                </div>
+                                <div class="book-right-info">
+                                    <p>113.31万<span>总字数</span></p>
+                                    <p>3341<span>总推荐</span></p>
+                                    <button class="red_btn">书籍详细</button>
+                                    <button class="blue_btn">加入书架</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 右边侧栏：本周强推 -->
+                <div class="right-recomment-wrap">
+                    <h3 class="wrap-title">本周强推</h3>
+                    <ul>
+                        <li>
+                            <div class="rec-book-img">
+                                <a href=""><img src="../img/search-wrap-img/search-right-img1.jpg" alt=""></a>
+                            </div>
+                            <div class="rec-book-info">
+                                <h3><a href="">光阴之外</a></h3>
+                                <p class="author">
+                                    <a href="">耳根</a>
+                                    <em>·</em>
+                                    <a href="">仙侠</a>
+                                    <em>·</em>
+                                    <a href="">神话修真</a>
+                                </p>
+                                <p class="intro">
+                                    天地是万物众生的客舍，光阴是古往今来的过客。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rec-book-img">
+                                <a href=""><img src="../img/search-wrap-img/search-right-img2.jpg" alt=""></a>
+                            </div>
+                            <div class="rec-book-info">
+                                <h3>凶狠系男神</h3>
+                                <p class="author">
+                                    <a href="">我女儿太可爱了</a>
+                                    <em>·</em>
+                                    <a href="">都市</a>
+                                    <em>·</em>
+                                    <a href="">都市生活</a>
+                                </p>
+                                <p class="intro">
+                                    肖勇，一个容貌极其凶恶的男人。凶恶到什么程度
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rec-book-img">
+                                <a href=""><img src="../img/search-wrap-img/search-right-img3.jpg" alt=""></a>
+                            </div>
+                            <div class="rec-book-info">
+                                <h3>非人类玩家</h3>
+                                <p class="author">
+                                    <a href="">非人流</a>
+                                    <em>·</em>
+                                    <a href="">科幻</a>
+                                    <em>·</em>
+                                    <a href="">进化变异</a>
+                                </p>
+                                <p class="intro">
+                                    我的名字叫陆遥，小名胖虎，今年1岁半，体重2
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rec-book-img">
+                                <a href=""><img src="../img/search-wrap-img/search-right-img1.jpg" alt=""></a>
+                            </div>
+                            <div class="rec-book-info">
+                                <h3><a href="">光阴之外</a></h3>
+                                <p class="author">
+                                    <a href="">耳根</a>
+                                    <em>·</em>
+                                    <a href="">仙侠</a>
+                                    <em>·</em>
+                                    <a href="">神话修真</a>
+                                </p>
+                                <p class="intro">
+                                    天地是万物众生的客舍，光阴是古往今来的过客。
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rec-book-img">
+                                <a href=""><img src="../img/search-wrap-img/search-right-img2.jpg" alt=""></a>
+                            </div>
+                            <div class="rec-book-info">
+                                <h3>凶狠系男神</h3>
+                                <p class="author">
+                                    <a href="">我女儿太可爱了</a>
+                                    <em>·</em>
+                                    <a href="">都市</a>
+                                    <em>·</em>
+                                    <a href="">都市生活</a>
+                                </p>
+                                <p class="intro">
+                                    肖勇，一个容貌极其凶恶的男人。凶恶到什么程度
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="rec-book-img">
+                                <a href=""><img src="../img/search-wrap-img/search-right-img3.jpg" alt=""></a>
+                            </div>
+                            <div class="rec-book-info">
+                                <h3>非人类玩家</h3>
+                                <p class="author">
+                                    <a href="">非人流</a>
+                                    <em>·</em>
+                                    <a href="">科幻</a>
+                                    <em>·</em>
+                                    <a href="">进化变异</a>
+                                </p>
+                                <p class="intro">
+                                    我的名字叫陆遥，小名胖虎，今年1岁半，体重2
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <footer>
+        <div class="footer-wrap container">
+            <p class="footer-text">上海网警提示：网络刷单是违法 切莫轻信有返利，网上交友套路多 卖惨要钱需当心，电子红包莫轻点 个人信息勿填写，仿冒客服来行骗 官方核实最重要，招工诈骗有套路 预交费用需谨慎，低价充值莫轻信 莫因游戏陷套路，连接WIFI要规范 确认安全再连接，抢购车票有章法 确认订单再付款，白条赊购慎使用 提升额度莫轻信，网购预付有风险 正规渠道很重要 如网民接到962110电话，请立即接听。</p>
+            <div class="friend-link">
+                <em>阅文集团旗下网站：</em>
+                <a href="">起点中文网</a>
+                <a href="">起点女生网</a>
+                <a href="">昆仑中文网</a>
+                <a href="">九天中文网</a>
+                <a href="">创世中文网</a>
+                <a href="">起点读书</a>
+                <a href="">QQ阅读</a>
+                <a href="">红袖添香</a>
+                <a href="">潇湘书院</a>
+                <a href="">云起书院</a>
+                <a href="">小说阅读网</a>
+                <a href="">言情小说吧</a>
+                <a href="">天书听书网</a>
+                <a href="">阅文悦读</a>
+                <a href="">作家助手</a>
+                <a href="">Webnovel</a>
+            </div>
+            <div class="footer-menu">
+                <a href="">关于起点</a>
+                <a href="">联系我们</a>
+                <a href="">加入我们</a>
+                <a href="">帮助中心</a>
+                <a href="">提交建议</a>
+                <a href="">举报中心</a>
+                <a href="">漏洞提交</a>
+            </div>
+            <div class="footer-copy">
+                <p>Copyright © 2002-2022 www.qidian.com All Rights Reserved 版权所有 上海玄霆娱乐信息科技有限公司</p>
+                <p><a href="">沪公网安备 31011502001275号</a> 增值电信业务经营许可证：沪B2-20080046 互联网ICP备案号： <a href="">沪B2-20080046-1</a> 出版经营许可证：新出发沪批字第 U3718 号</p>
+                <p>网络文化经营许可证：沪网文〔2021〕0374-020号 网络出版服务许可证：（署）网出证（沪）字第055号 营业执照</p>
+                <p>请所有作者发布作品时务必遵守国家互联网信息管理办法规定，我们拒绝任何色情小说，一经发现，即作删除！举报电话：010-59357051</p>
+                <p>本站所收录的作品、社区话题、用户评论、用户上传内容或图片等均属用户个人行为。如前述内容侵害您的权益，欢迎举报投诉，一经核实，立即删除，本站不承担任何责任</p>
+                <p>联系方式 总机 021-61870500 地址：中国（上海）自由贸易试验区碧波路690号6号楼101、201室</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 登录界面 -->
+    <div id="login_wrap" class="modal-login">
+        <div class="login-wrap">
+            <span id="close_login" class="close-login-wrap">×</span>
+            <ul class="login-tag">
+                <li class="act">账号登录</li>
+                <li>QQ登录</li>
+                <li>微信登录</li>
+            </ul>
+            <div class="login-switch-wrap">
+                <!-- 账号登录 -->
+                <div id="zh_login" class="zh-login-wrap">
+                    <dl>
+                        <dd>
+                            <span class="login-icon iconfont icon-renwu"></span>
+                            <input type="text" placeholder="手机/邮箱/用户名">
+                        </dd>
+                        <dd>
+                            <span class="login-icon  iconfont icon-lock"></span>
+                            <input type="text" placeholder="密码">
+                        </dd>
+                    </dl>
+                    <div class="auto-login-box">
+                        <input type="checkbox">
+                        <em>自动登录</em>
+                        <a href="">忘记密码</a>
+                    </div>
+                    <div class="login-btn">
+                        <button>登 录</button>
+                    </div>
+                    <div class="register-box">
+                        <a href="">手机验证码登录</a>
+                        <em>|</em>
+                        <a href="">免费注册</a>
+                    </div>
+                    <!-- 通用格式 -->
+                    <p class="login-common">登录即代表同意<a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a></p>
+                    <div class="order-way">
+                        <a href=""><span class="iconfont icon-zhifubaozhifu"></span></a>
+                        <a href=""><span class="iconfont icon-xinlangweibo"></span></a>
+                        <a href=""><span class="iconfont icon-BaiDu"></span></a>
+                    </div>
+                </div>
+                <!-- QQ登录 -->
+                <div id="qq_login" class="qq-login-wrap">
+                    <img src="../img/qq-logo.png" alt="">
+                    <p class="qq-login-tip">您将跳转至指定页面进行登陆操作</p>
+                    <div class="login-btn">
+                        <button>前去登录 QQ</button>
+                    </div>
+                    <!-- 通用格式 -->
+                    <p class="login-common">登录即代表同意<a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a></p>
+                </div>
+                <!-- 微信登陆 -->
+                <div id="wx_login" class="wx-login-wrap">
+                    <div class="QR-code">
+                        <span>这是二维码</span>
+                    </div>
+                    <p class="wx-login-tip">使用微信扫一扫登录</p>
+                    <p class="wx-login-tip">"起点中文网"</p>
+                    <!-- 通用格式 -->
+                    <p class="login-common">登录即代表同意<a href="">《用户服务协议》</a>和<a href="">《隐私政策》</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/topNav.js"></script>
+    <script src="../js/searchPage.js"></script>
+</body>
+</html>
